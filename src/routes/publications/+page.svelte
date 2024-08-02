@@ -3,7 +3,6 @@
 <br>
 
 <script>
-    import ScatterPlot from '$lib/components/timeline.svelte'
 
     let publications = [
         {

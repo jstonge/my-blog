@@ -1,0 +1,256 @@
+@import '@fontsource/manrope';
+@import '@fontsource/jetbrains-mono';
+
+html {
+	/* font */
+	--font-sans: 'Manrope', sans-serif;
+	--font-mono: 'JetBrains Mono', monospace;
+
+	/* dark */
+	--brand-dark: var(--orange-3);
+	--text-1-dark: var(--gray-3);
+	--text-2-dark: var(--gray-5);
+	--surface-1-dark: var(--gray-12);
+	--surface-2-dark: var(--gray-11);
+	--surface-3-dark: var(--gray-10);
+	--surface-4-dark: var(--gray-9);
+	--background-dark: var(--gradient-8);
+	--border-dark: var(--gray-9);
+
+	/* light */
+	--brand-light: var(--orange-10);
+	--text-1-light: var(--gray-8);
+	--text-2-light: var(--gray-7);
+	--surface-1-light: var(--gray-0);
+	--surface-2-light: var(--gray-1);
+	--surface-3-light: var(--gray-2);
+	--surface-4-light: var(--gray-3);
+	--background-light: none;
+	--border-light: var(--gray-4);
+}
+
+:root {
+	color-scheme: dark;
+
+	--brand: var(--brand-dark);
+	--text-1: var(--text-1-dark);
+	--text-2: var(--text-2-dark);
+	--surface-1: var(--surface-1-dark);
+	--surface-2: var(--surface-2-dark);
+	--surface-3: var(--surface-3-dark);
+	--surface-4: var(--surface-4-dark);
+	--background: var(--background-dark);
+	--border: var(--border-dark);
+	
+	--highlight-color: #ff9800; /* border color */
+	--highlight-background: #fff3e0; /* background color */
+	--highlight-title: #e65100; /* title color */
+	--highlight-date: #ffcc80; /* date color */
+	--highlight-description: #ffab40; /* description color */
+	--highlight-tags: #6495ED; /* description color */
+	--highlight-glow-color: #ffc107; /* glow color */
+
+	--font-size-fluid-1: 1.2rem; /* Example size */
+	--font-size-fluid-2: 1rem;   /* Example size */
+	--font-size-fluid-3: 0.8rem; /* Example size */
+
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		color-scheme: light;
+
+		--brand: var(--brand-light);
+		--text-1: var(--text-1-light);
+		--text-2: var(--text-2-light);
+		--surface-1: var(--surface-1-light);
+		--surface-2: var(--surface-2-light);
+		--surface-3: var(--surface-3-light);
+		--surface-4: var(--surface-4-light);
+		--background: var(--background-light);
+		--border: var(--border-light);
+
+		--highlight-color: #ff9800; /* border color */
+		--highlight-background: #fff3e0; /* background color */
+		--highlight-title: #e65100; /* title color */
+		--highlight-date: #ffcc80; /* date color */
+		--highlight-description: #ffab40; /* description color */
+		--highlight-tags: #6495ED; /* description color */
+		--highlight-glow-color: #ffc107; /* glow color */
+
+		--font-size-fluid-0: 2rem; /* Example size */
+		--font-size-fluid-1: 1.2rem; /* Example size */
+		--font-size-fluid-2: 1rem;   /* Example size */
+		--font-size-fluid-3: 0.8rem; /* Example size */
+
+		--color-band-0: hsl(209, 27%, 79%);
+		--color-band-1: #6495ED;
+		--color-band-2: #e65100;
+		--color-band-3: #ffc107;
+		--color-band-4: #ffcc80;
+
+		--theme-green: #37ad4e;
+
+		--width-column-wide: 1500px;
+		--width-column-regular: 720px;
+		--width-padded: 80vw;
+		--margin-left: 10vw;
+		--width-padded-mobile: 90vw;
+		--margin-left-mobile: 5vw;
+
+	}
+}
+
+[color-scheme='dark'] {
+	color-scheme: dark;
+
+	--brand: var(--brand-dark);
+	--text-1: var(--text-1-dark);
+	--text-2: var(--text-2-dark);
+	--surface-1: var(--surface-1-dark);
+	--surface-2: var(--surface-2-dark);
+	--surface-3: var(--surface-3-dark);
+	--surface-4: var(--surface-4-dark);
+	--background: var(--background-dark);
+	--border: var(--border-dark);
+}
+
+[color-scheme='light'] {
+	color-scheme: light;
+
+	--brand: var(--brand-light);
+	--text-1: var(--text-1-light);
+	--text-2: var(--text-2-light);
+	--surface-1: var(--surface-1-light);
+	--surface-2: var(--surface-2-light);
+	--surface-3: var(--surface-3-light);
+	--surface-4: var(--surface-4-light);
+	--background: var(--background-light);
+	--border: var(--border-light);
+}
+
+html,
+body {
+	height: 100%;
+}
+
+html {
+	color: var(--text-1);
+	accent-color: var(--link);
+	background-image: var(--background);
+	background-attachment: fixed;
+}
+
+img {
+	border-radius: var(--radius-3);
+}
+
+ul,
+ol {
+	list-style: none;
+	padding: 0;
+}
+
+li {
+	line-height: 1.65;
+	margin-bottom: 1em;
+}
+
+.surface-1 {
+	background-color: var(--surface-1);
+	color: var(--text-2);
+}
+
+.surface-2 {
+	background-color: var(--surface-2);
+	color: var(--text-2);
+}
+
+.surface-3 {
+	background-color: var(--surface-3);
+	color: var(--text-1);
+}
+
+.surface-4 {
+	background-color: var(--surface-4);
+	color: var(--text-1);
+}
+
+.prose :is(h2, h3, h4, h5, h6) {
+	margin-top: var(--size-8);
+	margin-bottom: var(--size-3);
+}
+
+.prose p:not(:is(h2, h3, h4, h5, h6) + p) {
+	margin-top: var(--size-7);
+}
+
+.prose :is(ul, ol) {
+	list-style-type: '-';
+	padding-left: var(--size-5);
+}
+
+.prose :is(ul, ol) li {
+	margin-block: var(--size-2);
+	padding-inline-start: var(--size-2);
+}
+
+.prose pre {
+	max-inline-size: 100%;
+	padding: var(--size-3);
+	border-radius: 8px;
+	tab-size: 2;
+}
+
+.title {
+	font-size: var(--font-size-fluid-1); /* Adjust the font size as needed */
+	text-transform: capitalize;
+  }
+
+.date {
+	color: var(--text-2);
+	font-size: var(--font-size-fluid-3); /* Adjusted font size for date */
+  }
+  
+.description {
+	font-size: var(--font-size-fluid-3); /* Adjusted font size for description */
+  }
+
+.column-wide {
+	max-width: var(--width-column-wide);
+	width: var(--width-padded);
+	margin: 0;
+	margin-left: var(--margin-left);
+	padding: 0;
+}
+
+.tip {
+    border-left: solid 1px;
+    border-radius: 0 4px 4px 0;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+    max-width: 640px;
+    border-left-color: var(--theme-green); /* Green border */
+    background-color: color-mix(in srgb,var(--theme-green), 90%);;
+  }
+
+.caution {
+    border-left: solid 1px;
+    border-radius: 0 4px 4px 0;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+    max-width: 640px;
+    border-left-color: var(--color-band-4); /* Green border */
+    background-color: color-mix(in srgb,var(--color-band-4), 90%);;
+  }
+
+mark::before, mark::after, del::before, del::after, ins::before, ins::after, s::before, s::after {
+	clip: rect(0 0 0 0);
+	clip-path: inset(100%);
+	height: 1px;
+	overflow: hidden;
+	position: absolute;
+	width: 1px;
+  }

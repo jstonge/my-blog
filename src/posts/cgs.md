@@ -96,19 +96,19 @@ Cultural group selection is a multilevel selection framework, which means we can
 	<div class="steps">
 		<Scrolly bind:value={currentStep}>
         <div class='step' class:active={currentStep === 0}>
-            <div class='margin-note-image-big'> 
+            <div class='margin-note-image-math'> 
               <Katex math={wbar_change_p}/> = <span style="color:#088F8F;"><Katex math={covar_wg_pg}/></span> + <Katex math={"E("+wg_change_pg+")"}/>
             </div>
           In group-land, the change of frequency of <em>S</em> is now equal to the following two terms. First, the <span style="color:#088F8F;">covariance between allele frequency in <em>g</em> and the mean fitness in group <em>g</em></span>. Yet again, we are saying that selection on groups depends on <em>var(p<sub>g</sub>)</em>, or variance in S across groups.
         </div>
         <div class='step' class:active={currentStep === 1}>
-            <div class='margin-note-image-big'>
+            <div class='margin-note-image-math'>
                 <Katex math={wbar_change_p}/> = <Katex math={covar_wg_pg}/> + <span style="color:#088F8F;"><Katex math={"E("+wg_change_pg+")"}/></span>
             </div>
             The second term says that there is some change in frequency of S that comes from the average change in allele frequency within the group. In words, this change within group is an <span style="color:#088F8F;">expectation over the product of the change in allele frequency in group <em>g</em> and its mean fitness</span>. This term is where the individual component of natural selection sneaks back in. 
         </div>
         <div class='step' class:active={currentStep === 2}>
-            <div class='margin-note-image-big'>
+            <div class='margin-note-image-math'>
                 <Katex math={wg_change_pg} class='margin-note'/>
                 =
                 <span style="color:#088F8F;"><Katex math={covar_wig_pig}/></span>
@@ -123,7 +123,7 @@ Cultural group selection is a multilevel selection framework, which means we can
 </section>
 
 <div class="parent-container">
-  <div class='model-container' style="text-align: center; margin-top: 5rem"> <br> <Katex math={wbar_change_p}/> = <Katex math={covar_wg_pg}/> + <Katex math={"E("+covar_wig_pig+")"}/>
+  <div class='model-container' style="text-align: center; margin-top: 6rem"> <br> <Katex math={wbar_change_p}/> = <Katex math={covar_wg_pg}/> + <Katex math={"E("+covar_wig_pig+")"}/>
   <br><small>(General form of Price equation;<br>see Mcelreath & Boyd 2008 p.229 for a more detailed derivation)</small>
   </div>
 </div>
@@ -257,6 +257,15 @@ In the next part of the series, we look at how CGS can relate to group-based mas
     top: 0; /* Align the top of the image with the top of the paragraph */
 }
 
+.margin-note-image-math {
+    width: 300px;  /* Set the width of the image */
+    float: right;  /* Align the image to the right */
+    margin-left: 20px; /* Space between the text and the image */
+    margin-right: -300px; /* Pull the image into the right margin */
+    position: relative; /* Position relative to its normal position */
+    top: 0; /* Align the top of the image with the top of the paragraph */
+}
+
 /* Parent container style */
 .parent-container {
     display: flex;
@@ -299,13 +308,22 @@ section {
 /* ON MOBILE */
 
 @media (max-width: 768px) {
+    
     .margin-note-image,
     .margin-note-image-big {
         float: none; /* Align image with text */
-        width: 50%; /* Make the image responsive */
+        width: 70%; /* Make the image responsive */
         margin: 0 auto; 
-        padding-bottom: 30px;  
-        border-radius: 10%; /* Make the image round in the corner */
+        padding-top: 10px;  
+        padding-bottom: 10px;  
+        border-radius: 15%; /* Make the image round in the corner */
+    }
+    
+    .margin-note-image-math {
+        float: none; /* Align image with text */
+        width: 70%; /* Make the image responsive */
+        margin: 0 auto; 
+        padding-bottom: 45px;  
     }
 
     /* Remove margin text when on mobile for now  */
@@ -314,12 +332,11 @@ section {
     }
 
     .parent-container {
-      padding: 3rem;
+      padding-top: 2rem;
     }
 
     .step {
-        height: 25vh;
-
+        height: 55vh;
     }
 
     .model-container {

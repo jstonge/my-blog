@@ -15,6 +15,7 @@ This is a small [observable notebook](https://observablehq.com/@jstonge/the-spre
 <div class="container" style="margin-top: 5vh;"> 
 <iframe
   class="responsive-iframe" 
+  title="internet history"
   src="https://observablehq.com/embed/@jstonge/the-spread-of-computational-thinking@latest?cell=*">
 </iframe>
 </div>

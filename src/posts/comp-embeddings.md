@@ -16,6 +16,7 @@ This is a small [observable notebook](https://observablehq.com/@jstonge/computat
 <div class="container" style="margin-top: 5vh;"> 
 <iframe
   class="responsive-iframe" 
+  title="s2orc comp embedding"
   src="https://observablehq.com/embed/@jstonge/computational-embeddings@latest?cell=*">
 </iframe>
 </div>

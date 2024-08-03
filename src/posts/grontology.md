@@ -16,6 +16,7 @@ I wrote a small [observable framework entry](https://jstonge.observablehq.cloud/
 <div class="container"> 
 <iframe
   class="responsive-iframe" 
+  title="coauthorships"
   src="https://jstonge.observablehq.cloud/hello-research-groups/grontology">
 </iframe>
 </div>

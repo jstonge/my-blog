@@ -8,9 +8,7 @@
   if (!visible) {
     onMount(() => {
       
-      setTimeout(() => {
-        visible = true;
-      }, 1000); 
+      visible = true;
   
       setTimeout(() => {
         taglineIns = "models";
@@ -33,7 +31,7 @@
           {/each}
         </div>
         <div class="subtitle">
-          <span class:is-del={taglineIns} in:fly={{ y: 20, duration: 120, delay: taglineIns ? 2 : 40 }}>
+          <span class:is-del={taglineIns} in:fly={{ y: 20, duration: 400, delay: taglineIns ? 20 : 1000 }}>
             {@html `
               Understanding the coevolution of 
               <span style="text-decoration: underline;">group dynamics</span> 

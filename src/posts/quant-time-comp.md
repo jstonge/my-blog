@@ -19,10 +19,6 @@ Here my attempt to distil the main axes of time and efforts for using Foundation
 
 <style>
 
-  h2 {
-    margin: 1.5rem 0 1rem 0;
-    font-size: 2rem;
-  }
 
   .margin-note {
     width: 80vw; /* Make the element take up the full viewport width */

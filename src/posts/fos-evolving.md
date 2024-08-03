@@ -13,7 +13,7 @@ coverImage: https://raw.githubusercontent.com/jstonge/hello-research-groups/main
 This is a small [observable notebook](https://observablehq.com/@jstonge/how-do-fos-evolve) for visualizing concepts in openAlex. 
 
 <br>
-<iframe width="100%" height="500" frameborder="0" class="crop"
+<iframe width="100%" height="500" frameborder="0" class="crop" title="OA concepts"
   src="https://observablehq.com/embed/@jstonge/how-do-fos-evolve@latest?cell=*"></iframe>
 
 <style type="text/css">

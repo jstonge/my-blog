@@ -8,12 +8,14 @@
 	import 'open-props/normalize'
 	import 'open-props/buttons'
 
-	export let data
+	// export let data
 </script>
 
 <div class="app">
     <NavBar />
-    <slot />
+    <div class="content">
+        <slot />
+    </div>
     <Footer />
 </div>
 
@@ -24,6 +26,17 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+    }
+
+    .content {
+        flex: 1;
+        padding: 1rem; /* Default padding */
+    }
+
+    @media only screen and (max-width: 767px) {
+        .content {
+        padding: 1rem 1.5rem; /* Increased padding for smaller screens */
+        }
     }
 
     :global(root) {
@@ -52,24 +65,3 @@
     }
 
 </style>
-
-<!-- <style>
-	.layout {
-		height: 100%;
-		max-inline-size: 1440px;
-		display: grid;
-		grid-template-rows: auto 1fr auto;
-		margin-inline: auto;
-		padding-inline: var(--size-7);
-	}
-
-	main {
-		padding-block: var(--size-9);
-	}
-
-	@media (min-width: 1440px) {
-		.layout {
-			padding-inline: 0;
-		}
-	}
-</style> -->

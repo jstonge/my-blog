@@ -48,7 +48,7 @@ What explains large-scale collaboration among unrelated individuals? For anthrop
 
 First, what are group-level cultural traits. In his book on the <a href="https://us.macmillan.com/books/9780374710453/theweirdestpeopleintheworld">The WEIRDest People in the World</a> (that's us Westerners), Joe Henrich tells the story of how Ilahita, a traditional society from New Guinea, got big for that time and place (≫300 people). How? A collection of stories, myths, and rites of terror that have facilitated interactions among distantly related households.
 
-<img src="https://raw.githubusercontent.com/jstonge/blog/main/static/tambaran-spirit-house.webp" alt="share-or-take" class="margin-note"/>
+<img src="https://raw.githubusercontent.com/jstonge/blog/main/static/tambaran-spirit-house.webp" class="margin-note-image" alt="tzamabaran spirit house"/>
 
 For instance, every household raises pigs, but they find that eating their own pigs is disgusting because it would be like eating one of their own's kid. This means that groups must exchange pigs at communal ceremonies. Furthermore, those ceremonies involve rites of passage for boys to become men (meaning boys can marry, learn about secret ritual knowledge, and climb the political ladder). The catch is that those rites must be performed by an opposite ritual group, meaning your success isn't solely dependent on your own group. 
 
@@ -60,9 +60,9 @@ But where is the math showing that, physicists ask.
 
 #### Cultural group selection, actually
 
-<div class="margin-note">
+<div class="margin-note-image">
   <div style="display: flex; justify-content: center; align-items: center;">
-    <img src = "../run-or-yell-primer.png" style="width: 70%;"/>
+    <img src = "../run-or-yell-primer.png" alt="run or yell primer" style="width: 70%;"/>
   </div>
   <!-- <caption style="display: flex; justify-content: center; align-items: center;"><a href="https://www.youtube.com/watch?v=iLX_r_WPrIw">Primer's blobs with behaviors contained in genes</a></caption> -->
 </div>
@@ -228,6 +228,25 @@ In the next part of the series, we look at how CGS can relate to group-based mas
 <style>
 
   /* Style for margin note */
+.margin-note-image {
+    font-size: 12px;
+    width: 300px;  /* Set the width of the image */
+    float: right;  /* Align the image to the right */
+    margin-left: 20px; /* Space between the text and the image */
+    margin-right: -300px; /* Pull the image into the right margin */
+    position: relative; /* Position relative to its normal position */
+    top: 0; /* Align the top of the image with the top of the paragraph */
+}
+
+.margin-note-image-big {
+    width: 300px;  /* Set the width of the image */
+    float: right;  /* Align the image to the right */
+    margin-left: 20px; /* Space between the text and the image */
+    margin-right: -300px; /* Pull the image into the right margin */
+    position: relative; /* Position relative to its normal position */
+    top: 0; /* Align the top of the image with the top of the paragraph */
+}
+
 .margin-note {
     font-size: 12px;
     width: 300px;  /* Set the width of the image */
@@ -245,6 +264,17 @@ In the next part of the series, we look at how CGS can relate to group-based mas
     margin-right: -300px; /* Pull the image into the right margin */
     position: relative; /* Position relative to its normal position */
     top: 0; /* Align the top of the image with the top of the paragraph */
+}
+
+@media (max-width: 768px) {
+    .margin-note-image,
+    .margin-note-image-big {
+        float: none; /* Align image with text */
+        width: 50%; /* Make the image responsive */
+        margin: 0 auto; 
+        padding-top: 20px;  
+        border-radius: 10%; /* Make the image round in the corner */
+    }
 }
 
 /* Parent container style */
@@ -287,21 +317,4 @@ section {
     z-index: 2;
 }
 
-.sticky {
-    position: sticky;
-    margin-top: 30px;
-    height: 90vh;
-    top: 5vh; /* (100vh - 90vh) / 2 */
-    z-index: 1;
-    margin-bottom: 1rem;
-    /* width: 100px;  Set the width to a fixed value */
-    float: right;  /* Align the image to the right */
-}
-
-.reference-step {
-    position: fixed;
-    bottom: 0;
-    right: 0;
-    padding: 1rem;
-}
 </style>

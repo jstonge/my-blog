@@ -13,7 +13,7 @@ coverImage: https://raw.githubusercontent.com/jstonge/hello-research-groups/main
 With our paper being published in [Royal Society B](https://royalsocietypublishing.org/journal/rspb), I finally decided to do a small [observable framework](https://joint-lab.observablehq.cloud/hello-gmes/) compiling the main takeaways of our group-based formalism to study contagion. 
 
 <br>
-<iframe width="100%" height="600px" frameborder="0" class="crop"
+<iframe width="100%" height="600px" frameborder="0" class="crop" title="rsb dashboard"
   src="https://observablehq.com/embed/@jstonge/computational-embeddings@latest?cell=*"></iframe>
 
 <style>

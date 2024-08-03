@@ -14,7 +14,7 @@ coverImage: https://raw.githubusercontent.com/jstonge/hello-research-groups/main
 This is a small [observable notebook](https://observablehq.com/@jstonge/uvm-course-offering-by-department) for visualizing the number of courses offered by department at University of Vermont
 
 <br>
-<iframe width="100%" height="500" frameborder="0" class="crop"
+<iframe width="100%" height="500" frameborder="0" class="crop" title="uvm course offering"
   src="https://observablehq.com/embed/@jstonge/uvm-course-offering-by-department@latest?cell=*"></iframe>
 
 <style>

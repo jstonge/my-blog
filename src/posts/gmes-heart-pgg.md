@@ -21,7 +21,7 @@ In PGG, we typically imagine that each round a group of <em>n</em> individuals i
 
 In <em>repeated</em> scenario, the group ought to play again together in the next round with probability <em>w</em>. As with other models of reciprocity, the relative cost-benefits ratio is heavily impacted even by that possibility. In collective action problems, it might depend on some threshold about how many people collaborated in the previous round (analogous to the infamous Axelrod's Tit-for-Tat strategy). 
 
-Following <a href="">McElreath & Boyd 2007, ch 4.5</a>, let <em>T<sub>i</sub></em> be the strategy of individuals <em>i</em>. We won't go in the details, but the idea is to specify what happens when that or that happens. For instance, what if <em>T<sub>i</sub></em> always reciprocate on the first round, then it depends on <em>i</em> other individuals having cooperated on the previous round. You can play with assumptions about how many people should have collaborated for <em>i</em> to collaborate. 
+Following <a href="https://press.uchicago.edu/ucp/books/book/chicago/M/bo4343149.html">McElreath & Boyd 2007, ch 4.5</a>, let <em>T<sub>i</sub></em> be the strategy of individuals <em>i</em>. We won't go in the details, but the idea is to specify what happens when that or that happens. For instance, what if <em>T<sub>i</sub></em> always reciprocate on the first round, then it depends on <em>i</em> other individuals having cooperated on the previous round. You can play with assumptions about how many people should have collaborated for <em>i</em> to collaborate. 
 
 Assuming <em>i</em> collaborate when everybody do their part, you ask what happens when you let a mutant loose in that sea of conditional cooperators. In the book, we find that this strategy is stable against systematic defection when
 
@@ -34,15 +34,15 @@ The key insight here is that provided you have a Tit-for-Tat strategy fighting a
 ### Adding structure to the problem
 
 <div style="width: 90%; margin-top: 2vh; margin-bottom: 2vh;">
-  <img src="https://raw.githubusercontent.com/jstonge/blog/main/static/ohtsukiSimple2006.webp"/>
-  <figcaption class="container"><b>Fig. 1 Ohtsuki et al. 2006</figcaption>
+  <img src="https://raw.githubusercontent.com/jstonge/blog/main/static/ohtsukiSimple2006.webp" alt="fig. 1 Ohtsuki et al. 2006"/>
+  <!-- <figcaption class="container"><b>Fig. 1 Ohtsuki et al. 2006</figcaption> -->
 </div>
 Having a structured population is another way to get assortment; with cooperators interacting more often than not they are going to meet repeatedly, favoring the evolution of cooperation (<a href="https://www.semanticscholar.org/paper/A-simple-rule-for-the-evolution-of-cooperation-on-Ohtsuki-Hauert/ee557d8918504b3098de11e696b9b5c484702ae1">Ohtsuki et al. 2006</a>). Starting in the 2000s, scale-free networks were all the hype in that literature; that is, if degree distribution <em>k</em> is dependent on 
 <Katex math={"d(k) \\sim k^{-\\gamma}"}/> with exponent <Katex math={"2 \\leq \\gamma \\leq 3"}/>, individuals are strongly correlated (<a href="https://www.semanticscholar.org/paper/Scale-free-networks-provide-a-unifying-framework-of-Santos-Pacheco/824f6e30654db760358e59719779fb7285d18332">Santos and Pacheco 2005</a>). A well known results by Ohtsuki et al. (2006) is that cooperation can evolve simply with <Katex math={"b/c \\gt k"}/>, or if the cost-benefit ratio exceeds the average numbers of neighbours <em>k</em>. 
 
 <div class="margin-note">
-  <img src="https://raw.githubusercontent.com/jstonge/blog/main/static/rsif20120997f08.webp"/>
-  <figcaption class="container"><b>Fig. 8 Perc et al. 2013</figcaption>
+  <img src="https://raw.githubusercontent.com/jstonge/blog/main/static/rsif20120997f08.webp" alt="Fig. 8 Perc et al. 2013"/>
+  <!-- <figcaption class="container"><b>Fig. 8 Perc et al. 2013</figcaption> -->
 </div>
 
 It was not long before physicists started exploring how features of pairwise interactions generalize to higher-order networks (<a href="https://www.nature.com/articles/nature06940">Santos et al. 2008</a><a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2012.0997">Perc et al. 2013</a>, <a href="https://www.nature.com/articles/s41562-020-01024-1">Alvarez-Rodriguez et al. 2021</a>). In this case, public good games are simply taken to be group interactions played on structured populations. And much of the early modeling efforts was to see how this choice of structures impact results from pairwise land. 
@@ -73,30 +73,6 @@ After the original scenarios from the last century, PGG experienced an evolution
  + Volunteering: people remains anonymous facilitate cooperation in sizable groups, even if interactions are not repeated (<a href="https://www.semanticscholar.org/paper/Volunteering-as-Red-Queen-Mechanism-for-Cooperation-Hauert-Monte/d6b69b64de3f3aecdb87b9863d3a6f089fa03d3b">Hauert et al. 2002</a>)
  + Multiple PGG: people can play different public good games at once (<a href="https://www.semanticscholar.org/paper/An-Institutional-Mechanism-for-Assortment-in-an-of-Smaldino-Lubell/aa2adf8477adaabd6336636f3ae8fd573e18a848">Smaldino & Lubel 2011</a>)
 
-<!-- <div class="table-container">
-  <table class="tg"><thead>
-    <tr>
-      <th class="tg-0pky"></th>
-      <th class="tg-0pky"><span style="font-weight:400;font-style:normal">quick and dirty</span></th>
-      <th class="tg-0pky">good coding practices</th>
-    </tr></thead>
-    <tbody>
-      <tr>
-        <td class="tg-0pky"><span style="font-weight:400;font-style:normal">quick and dirty</span></td>
-        <td class="tg-0pky">0</td>
-        <td class="tg-0pky">b/n</td>
-      </tr>
-      <tr>
-        <td class="tg-0pky">good coding practices</td>
-        <td class="tg-0pky">b/n - c</td>
-        <td class="tg-0pky">b/n - c/2</td>
-      </tr>
-    </tbody>
-  </table>
-</div> -->
-
-
-
 <style>
   .container {
     display: flex;
@@ -104,40 +80,6 @@ After the original scenarios from the last century, PGG experienced an evolution
     align-items: center;    /* Center vertically */
     margin-top: 2vh;
   }
-
-  /* .tg  {
-    border-collapse:collapse;
-    border-spacing:0;
-  }
-
-  .tg td{
-    border-color:black;
-    border-style:solid;
-    border-width:1px;
-    font-family:Arial, sans-serif;
-    font-size:14px;
-    overflow:hidden;
-    padding:10px 5px;
-    word-break:normal;
-    }
-
-  .tg th{
-    border-color:black;
-    border-style:solid;
-    border-width:1px;
-    font-family:Arial, sans-serif;
-    font-size:14px;
-    font-weight:normal;
-    overflow:hidden;
-    padding:10px 5px;
-    word-break:normal;
-    }
-
-  .tg .tg-0pky{
-    border-color:inherit;
-    text-align:left;
-    vertical-align:top
-    } */
 
   /* Style for margin note */
   .margin-note {

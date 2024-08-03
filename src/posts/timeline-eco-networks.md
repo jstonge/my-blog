@@ -17,6 +17,7 @@ This is a small [observable framework entry](https://jstonge.observablehq.cloud/
   width="100%"
   height="600"
   class="crop"
+  title="netsci2024 ecology"
   src="https://jstonge.github.io/ecology-networks-timeline/">
 </iframe>
 

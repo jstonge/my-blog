@@ -52,7 +52,7 @@
 .hero {
   background: linear-gradient(90deg, #ebc7a3 0%, #87bd8b 100%);
   padding: 15rem 1rem; /* Padding top and bottom - w/o it, small screen subtitle goes awry */
-  height: 80vh;
+  height: 00vh;
   display: flex;
   align-items: center; /* Center vertically */
   justify-content: center; /* Center horizontally */

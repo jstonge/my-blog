@@ -75,7 +75,7 @@ CGS is rooted in population genetics. Population genetic models are all about ke
   </div>
 </div>
 
-<div class="margin-note">
+<div class="margin-note-text">
   <br>
   Recall from statistics that covariance takes different forms. It can be written as the average over the product of individual traits and fitness minus the product of their averages, <Katex math={"\\text{cov}(w_i,p_i) = E(p_i w_i) - E(p_i)E(w_i)"}/><br><br>It can also be written with a cofficient regression,<br><Katex math={"\\text{cov}(w_i,p_i) = \\text{var}(p_i)\\frac{\\text{cov}(w_i,p_i)}{\\text{var}(p_i)} = \\text{var}(p_i)\\beta(w_i,p_i)"}/>, revealing how without variance in allele frequencies you cannot have selection.
 </div> 
@@ -85,7 +85,7 @@ Cultural evolutionists now make a bold move to natural selection could (in princ
 
 <img src = "../inds-to-cgs.svg" style="margin-top: 2rem;" alt="cgs"/>
 
-<div class='margin-note' style="margin-top: 10rem;">The mean number of copies by group is <Katex math={wg}/>, where <em>n<sub>g</sub></em> and <em>p<sub>g</sub></em> is the number of individuals and the frequency of realized behavior, respectively, in group <em>g</em>.</div>
+<div class='margin-note-text' style="margin-top: 10rem;">The mean number of copies by group is <Katex math={wg}/>, where <em>n<sub>g</sub></em> and <em>p<sub>g</sub></em> is the number of individuals and the frequency of realized behavior, respectively, in group <em>g</em>.</div>
 
 On the left, we represent a diploid individual, with its two set of genes that could be realized into one of two behaviors. In this world, we track the changes in individual allele frequency over generations, regardless of the population structure. On the right, we have two <em>individuals</em> as part of a group, each with a realized behavior. Below, we denote <em>p<sub>ig</sub></em> as the frequency of individual ᵢ with realized behavior, labeled <em>S</em>, in group <em><sub>g</sub></em>. Accordingly, <em>w<sub>ig</sub></em> refers the number of copies of that behavior in that group. 
 
@@ -96,19 +96,19 @@ Cultural group selection is a multilevel selection framework, which means we can
 	<div class="steps">
 		<Scrolly bind:value={currentStep}>
         <div class='step' class:active={currentStep === 0}>
-            <div class='margin-note-big'> 
+            <div class='margin-note-image-big'> 
               <Katex math={wbar_change_p}/> = <span style="color:#088F8F;"><Katex math={covar_wg_pg}/></span> + <Katex math={"E("+wg_change_pg+")"}/>
             </div>
           In group-land, the change of frequency of <em>S</em> is now equal to the following two terms. First, the <span style="color:#088F8F;">covariance between allele frequency in <em>g</em> and the mean fitness in group <em>g</em></span>. Yet again, we are saying that selection on groups depends on <em>var(p<sub>g</sub>)</em>, or variance in S across groups.
         </div>
         <div class='step' class:active={currentStep === 1}>
-            <div class='margin-note-big'>
+            <div class='margin-note-image-big'>
                 <Katex math={wbar_change_p}/> = <Katex math={covar_wg_pg}/> + <span style="color:#088F8F;"><Katex math={"E("+wg_change_pg+")"}/></span>
             </div>
             The second term says that there is some change in frequency of S that comes from the average change in allele frequency within the group. In words, this change within group is an <span style="color:#088F8F;">expectation over the product of the change in allele frequency in group <em>g</em> and its mean fitness</span>. This term is where the individual component of natural selection sneaks back in. 
         </div>
         <div class='step' class:active={currentStep === 2}>
-            <div class='margin-note-big'>
+            <div class='margin-note-image-big'>
                 <Katex math={wg_change_pg} class='margin-note'/>
                 =
                 <span style="color:#088F8F;"><Katex math={covar_wig_pig}/></span>
@@ -247,7 +247,7 @@ In the next part of the series, we look at how CGS can relate to group-based mas
     top: 0; /* Align the top of the image with the top of the paragraph */
 }
 
-.margin-note {
+.margin-note-text {
     font-size: 12px;
     width: 300px;  /* Set the width of the image */
     float: right;  /* Align the image to the right */
@@ -257,26 +257,6 @@ In the next part of the series, we look at how CGS can relate to group-based mas
     top: 0; /* Align the top of the image with the top of the paragraph */
 }
 
-.margin-note-big {
-    width: 300px;  /* Set the width of the image */
-    float: right;  /* Align the image to the right */
-    margin-left: 20px; /* Space between the text and the image */
-    margin-right: -300px; /* Pull the image into the right margin */
-    position: relative; /* Position relative to its normal position */
-    top: 0; /* Align the top of the image with the top of the paragraph */
-}
-
-@media (max-width: 768px) {
-    .margin-note-image,
-    .margin-note-image-big {
-        float: none; /* Align image with text */
-        width: 50%; /* Make the image responsive */
-        margin: 0 auto; 
-        padding-top: 20px;  
-        border-radius: 10%; /* Make the image round in the corner */
-    }
-}
-
 /* Parent container style */
 .parent-container {
     display: flex;
@@ -284,12 +264,10 @@ In the next part of the series, we look at how CGS can relate to group-based mas
     align-items: center;    /* Center vertically */
 }
 
-/* Model container style */
+
 .model-container {
     font-size: var(--font-size-fluid-1);
-    padding-left: 2rem;
-    padding-right: 2rem;
-    padding-bottom: 1rem;
+    padding: 1rem;
     margin: 2rem 0 2rem 0;
     border: 1px solid black;
     border-radius: 6px;
@@ -302,6 +280,7 @@ In the next part of the series, we look at how CGS can relate to group-based mas
 .step {
     height: 18vh;
     opacity: 0.3;
+    
 }
 
 .step.active {
@@ -313,8 +292,46 @@ section {
 }
 
 .steps {
-    position: relative;
-    z-index: 2;
+    display: flex;
+    flex-direction: column;
 }
+
+/* ON MOBILE */
+
+@media (max-width: 768px) {
+    .margin-note-image,
+    .margin-note-image-big {
+        float: none; /* Align image with text */
+        width: 50%; /* Make the image responsive */
+        margin: 0 auto; 
+        padding-bottom: 30px;  
+        border-radius: 10%; /* Make the image round in the corner */
+    }
+
+    /* Remove margin text when on mobile for now  */
+    .margin-note-text {
+        display: none;
+    }
+
+    .parent-container {
+      padding: 3rem;
+    }
+
+    .step {
+        height: 25vh;
+
+    }
+
+    .model-container {
+      font-size: var(--font-size-fluid-1);
+      padding: 1rem;
+      border: 1px solid black;
+      border-radius: 6px;
+      box-shadow: 1px 1px 30px rgba(0, 0, 0, 1);
+      display: inline-block;
+  }
+    
+}
+
 
 </style>

@@ -42,7 +42,7 @@
 
     @media only screen and (max-width: 767px) {
         .content {
-        padding: 1rem 1.5rem; /* Increased padding for smaller screens */
+            padding: 1rem 1.5rem; /* Increased padding for smaller screens */
         }
     }
 

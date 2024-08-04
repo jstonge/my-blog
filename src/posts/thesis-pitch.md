@@ -1,7 +1,7 @@
 ---
 title: Thesis Pitch
 description: TLDR; here's my thesis in bullet points
-date: '2024-3-24'
+date: '2024-03-24'
 slug: thesis-pitch
 categories:
   - Thesis

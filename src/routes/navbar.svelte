@@ -135,6 +135,7 @@
             width: 100%;
             transition: all 300ms ease-in-out;
             pointer-events: none;
+            z-index: 999; /* Ensure the nav is above other content */
         }
 
         nav.open {

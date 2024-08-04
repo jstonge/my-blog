@@ -1,7 +1,7 @@
 ---
 title: Timeline ecological networks
 description: A short history of ecological networks
-date: '2024-2-24'
+date: '2024-02-24'
 categories:
   - netsci-2024
 published: true

@@ -1,7 +1,7 @@
 ---
 title: The rise of computational stuff (WIP)
 description: Where and when did the internet happened? Early prototype using observable' `plot.Geo`.
-date: '2024-5-22'
+date: '2024-05-22'
 categories:
   - fleeting notes
   - data viz

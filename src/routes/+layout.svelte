@@ -2,20 +2,27 @@
 <script>
     import NavBar from "./navbar.svelte";
     import Footer from "./footer.svelte";
+    import PageTransition from './transition.svelte'
     import '../app.css'
     
     import 'open-props/style'
 	import 'open-props/normalize'
 	import 'open-props/buttons'
 
-	// export let data
+	export let data
 </script>
 
 <div class="app">
     <NavBar />
-    <div class="content">
-        <slot />
-    </div>
+
+    <main>
+        <div class="content">
+            <PageTransition url={data.url}>
+                <slot />
+            </PageTransition>
+        </div>
+    </main>
+    
     <Footer />
 </div>
 

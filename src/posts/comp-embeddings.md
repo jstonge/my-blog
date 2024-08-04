@@ -1,7 +1,7 @@
 ---
 title: Computational Embeddings
 description: Visualizing similarity using umap+hdbscan
-date: '2024-5-10'
+date: '2024-05-10'
 categories:
   - framework
   - pan & zoom

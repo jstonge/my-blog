@@ -1,7 +1,7 @@
 ---
 title: Rethinking
 description: Rethinking everything.
-date: '2023-4-14'
+date: '2023-04-14'
 categories:
   - bayesian
 published: false

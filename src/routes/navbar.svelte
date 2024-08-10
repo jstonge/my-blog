@@ -10,6 +10,7 @@
 
 <div class="navbar">
     <div class="logo" on:click={() => current = -1}><h2><a href="/">Humans & Golems</a></div>
+    <div class="menu-container">
     <nav class:open={isMenuOpen}>
         <ul>
             <li on:click={()=>{isMenuOpen = false}}><a class:current={current===0} on:click={() => current = 0} href="/about">About</a></li> 
@@ -17,6 +18,7 @@
             <li on:click={()=>{isMenuOpen = false}}><a class:current={current===2} on:click={() => current = 2} href="/publications">Publications</a></li>
         </ul>
     </nav>
+    </div>
     <button class="burger" on:click={toggleMenu} class:open={isMenuOpen}>
         <div class="bar1"></div>
         <div class="bar2"></div>
@@ -31,18 +33,20 @@
     
     .logo {
         margin-left: 3vw;
+        padding-bottom: 0.3rem;
     }
 
+    .menu-container {
+        margin-top: 0.3rem;
+    }
+
+    /* RHS options on large screen */
     ul {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
-        gap: 5vh;
-        margin-top: 2vh;
-        margin-bottom: 4vh;
         list-style-type: none;
-        font-size: 1.1rem;
     }
 
     li > a {

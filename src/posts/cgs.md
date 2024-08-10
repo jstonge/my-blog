@@ -5,9 +5,10 @@ date: '2024-07-05'
 categories:
   - culturalGroupSelection
   - gameTheory
+  - phd
 published: true
 pinned: true
-coverImage: https://raw.githubusercontent.com/jstonge/blog/main/thumbnails/stories/cgs-ver-abstract.webp
+coverImage: src/lib/thumbnails/stories/cgs-ver-abstract.webp
 ---
 
 <script>

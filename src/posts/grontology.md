@@ -3,11 +3,11 @@ title: Grontology
 description: How do different fields of study understand social groups?
 date: '2024-07-12'
 categories:
-  - literature review
-  - framework
+  - litReview
+  - phd
 published: true
 pinned: false
-coverImage: https://raw.githubusercontent.com/jstonge/blog/main/thumbnails/stories/grontology.webp
+coverImage: src/lib/thumbnails/stories/grontology.webp
 ---
 
 I wrote a small [observable framework entry](https://jstonge.observablehq.cloud/hello-research-groups/grontology) for visualizing the my literature of groups ontology. What I like about it is that we can see a wide variability of patterns of coauthorships and productivity, that we know are closely related. 

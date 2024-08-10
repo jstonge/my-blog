@@ -7,7 +7,6 @@ categories:
   - data viz
 published: true
 published: false
-coverImage: https://raw.githubusercontent.com/jstonge/hello-research-groups/main/docs/assets/HenslinCh5.webp
 ---
 
 This is a small [observable notebook](https://observablehq.com/@jstonge/how-do-fos-evolve) for visualizing concepts in openAlex. 

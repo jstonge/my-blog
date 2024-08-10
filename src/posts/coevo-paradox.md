@@ -4,10 +4,11 @@ description: Using group-based master equations to model the coevolution of poli
 date: '2024-06-20'
 categories:
   - paper
-  - data viz
+  - dashboard
+  - phd
 published: true
 pinned: true
-coverImage: https://raw.githubusercontent.com/jstonge/hello-research-groups/main/docs/assets/modeling.webp
+coverImage: src/lib/thumbnails/stories/modeling.webp
 ---
 
 With our paper being published in [Royal Society B](https://royalsocietypublishing.org/journal/rspb), I finally decided to do a small [observable framework](https://joint-lab.observablehq.cloud/hello-gmes/) compiling the main takeaways of our group-based formalism to study contagion. 

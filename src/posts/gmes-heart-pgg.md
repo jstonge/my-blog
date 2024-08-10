@@ -3,10 +3,11 @@ title: Group-based master equations as (many) repeated games
 description: Public good games as group-based master equations.
 date: '2024-07-16'
 categories:
-  - lit review
+  - litReview
+  - phd
 published: false
 pinned: false
-coverImage: ../thumbnails/stories/cgs-ver-abstract.webp
+coverImage: src/lib/thumbnails/stories/cgs-ver-abstract.webp
 ---
 
 <script>

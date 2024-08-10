@@ -3,7 +3,8 @@ title: Timeline coauthors
 description: Rethinking everything.
 date: '2023-06-14'
 categories:
-  - measuring groups
+  - measuringGroups
+  - phd
 published: true
 pinned: true
 coverImage: https://raw.githubusercontent.com/jstonge/hello-research-groups/main/docs/assets/measuring.webp

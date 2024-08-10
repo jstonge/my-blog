@@ -4,8 +4,9 @@ description: TLDR; here's my thesis in bullet points
 date: '2024-03-24'
 slug: thesis-pitch
 categories:
-  - Thesis
+  - phd
 published: false
+pinned: false
 ---
 
 ## Table of Contents

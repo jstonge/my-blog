@@ -3,8 +3,8 @@ title: UVM course offering by department
 description: Number of courses offered by department at University of Vermont
 date: '2023-12-12'
 categories:
-  - fleeting notes
-  - eda
+  - fleeting
+  - EDA
   - duckDB
 published: true
 pinned: false

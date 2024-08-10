@@ -164,7 +164,7 @@
   
 	.description {
 	  color: var(--text-3-dark);
-	  font-size: var(--font-size-fluid-2);
+	  font-size: var(--font-size-fluid-1);
 	}
   
 	.cover-image {

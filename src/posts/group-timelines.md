@@ -8,6 +8,5 @@ categories:
   - GMEs
 published: false
 pinned: false
-coverImage: ../thumbnails/stories/cgs-ver-abstract.webp
 ---
 

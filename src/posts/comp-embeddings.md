@@ -8,7 +8,7 @@ categories:
   - d3
 published: true
 pinned: false
-coverImage: https://raw.githubusercontent.com/jstonge/blog/main/thumbnails/stories/comp-embeddings.webp
+coverImage: src/lib/thumbnails/stories/comp-embeddings.webp
 ---
 
 This is a small [observable notebook](https://observablehq.com/@jstonge/computational-embeddings) for visualizing the s2orc's embeddings of papers with mention of the 'computational' keyword. 

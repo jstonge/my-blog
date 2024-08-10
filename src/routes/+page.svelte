@@ -6,6 +6,8 @@
     export let data;
     
     const pinnedPosts = data.posts.filter(post => post.pinned);
+    const projects = data.posts.filter(post => post.type === 'project');
+    console.log(projects.map(d => d.extraSource))
 </script>
 
 <svelte:head>
@@ -45,26 +47,26 @@
 
 <section>
     <ul class="posts">
-        <li class="post column-wide">
-            <div class="content">
-                <h4 tabindex="-1" dir="auto">
-                    <a href="https://jstonge.observablehq.cloud/hello-research-groups/">
-                        <code>Hello-Research-Groups</code>
-                    </a> <p class="status">Status: Ongoing</p>
-                </h4>
-                <img src="https://raw.githubusercontent.com/jstonge/blog/main/thumbnails/stories/cgs-ver-abstract.webp" alt="hello-research-group" class="cover-image" style="margin-top:1rem; margin-bottom:1rem">
-                <p><a href="https://github.com/jstonge/hello-research-groups" style="text-decoration: underline; text-underline-offset: .2rem;">Source</a> ·  A collection of entries, tied together by the idea of defining, modeling, and measuring social groups.</p>
-            </div>
-            <div class="content">
-                <h4 tabindex="-1" dir="auto">
-                    <a href="https://jstonge.observablehq.cloud/hello-research-groups/">
-                        <code>Hello-Research-Groups</code>
-                    </a> <p class="status">Status: Ongoing</p>
-                </h4>
-                <img src="https://raw.githubusercontent.com/jstonge/blog/main/thumbnails/stories/cgs-ver-abstract.webp" alt="hello-research-group" class="cover-image" style="margin-top:1rem; margin-bottom:1rem">
-                <p><a href="https://github.com/jstonge/hello-research-groups" style="text-decoration: underline; text-underline-offset: .2rem;">Source</a> ·  A collection of entries, tied together by the idea of defining, modeling, and measuring social groups.</p>
-            </div>
-        </li>
+        {#each projects as project, i}
+            <li class="post column-wide">
+                <div class="content">
+                    <h4 tabindex="-1" dir="auto">
+                        <a href={project.source}>
+                            <code>{project.title}</code>
+                        </a> <p class="status">Status: {project.status}</p>
+                    </h4>
+                    <img src={project.coverImage} alt="hello-research-group" class="cover-image" style="margin-top:1rem; margin-bottom:1rem">
+                    <p>
+                        <a href={project.source} style="text-decoration: underline; text-underline-offset: .2rem;">Source</a> 
+                        {#if project.extraSource !== undefined}
+                            (<a href={project.extraSource} style="text-decoration: underline; text-underline-offset: .2rem;">Source 2</a>)
+                        {/if}
+                        ·  {project.description}
+                    </p>
+                </div>
+            </li>
+        {/each}
+        
     </ul>
 </section>
 

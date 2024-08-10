@@ -3,7 +3,8 @@ title: Modeling institutions
 description: How do people model institutions?
 date: '2024-07-08'
 categories:
-  - lit review
+  - litReview
+  - phd
 published: false
 pinned: false
 coverImage: ../thumbnails/stories/cgs-ver-abstract.webp

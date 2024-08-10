@@ -35,7 +35,7 @@
 		{#if $selectedTag}
 		  <button class="clear-tag-button" on:click={clearTag}>Clear Tag Filter</button>
 		{/if}
-	  </div>
+	</div>
 
 	
 	<div class="table-header table-layout">

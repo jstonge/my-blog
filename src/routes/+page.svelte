@@ -4,6 +4,7 @@
     import * as config from '$lib/config'
 
     export let data;
+    
     const pinnedPosts = data.posts.filter(post => post.pinned);
 </script>
 
@@ -54,6 +55,15 @@
                 <img src="https://raw.githubusercontent.com/jstonge/blog/main/thumbnails/stories/cgs-ver-abstract.webp" alt="hello-research-group" class="cover-image" style="margin-top:1rem; margin-bottom:1rem">
                 <p><a href="https://github.com/jstonge/hello-research-groups" style="text-decoration: underline; text-underline-offset: .2rem;">Source</a> ·  A collection of entries, tied together by the idea of defining, modeling, and measuring social groups.</p>
             </div>
+            <div class="content">
+                <h4 tabindex="-1" dir="auto">
+                    <a href="https://jstonge.observablehq.cloud/hello-research-groups/">
+                        <code>Hello-Research-Groups</code>
+                    </a> <p class="status">Status: Ongoing</p>
+                </h4>
+                <img src="https://raw.githubusercontent.com/jstonge/blog/main/thumbnails/stories/cgs-ver-abstract.webp" alt="hello-research-group" class="cover-image" style="margin-top:1rem; margin-bottom:1rem">
+                <p><a href="https://github.com/jstonge/hello-research-groups" style="text-decoration: underline; text-underline-offset: .2rem;">Source</a> ·  A collection of entries, tied together by the idea of defining, modeling, and measuring social groups.</p>
+            </div>
         </li>
     </ul>
 </section>
@@ -65,9 +75,9 @@
 
     .post {
         padding: var(--size-5) 0;
-        align-items: flex-start;
-        padding: 4rem 1;
-        vertical-align: baseline;
+        /* align-items: flex-start; */
+        /* padding: 4rem 1; */
+        /* vertical-align: baseline; */
         margin-bottom: 0.25rem;
         box-sizing: border-box;
     }
@@ -79,9 +89,9 @@
 
     .post-content {
         display: flex;
-        max-width: 1200px;
-        margin-left: 10px;
-        padding: 0 var(--size-5);
+        /* max-width: 1200px; */
+        /* margin-left: 10px; */
+        padding: 0 var(--size-10);
     }
 
     .cover-image {
@@ -140,7 +150,6 @@
     }
 
     .status {
-		margin-top: 2rem;
 		font-size: var(--font-size-fluid-3);
 		display: inline-block; /* Ensure the tag is only as wide as its content */
 		padding: var(--size-1) var(--size-3);
@@ -148,6 +157,7 @@
 		border-radius: var(--radius-round);
 		margin: var(--size-2); 
 	}
+    
 
     /* On small screens, hide the nav and show the burger */
     @media screen and (max-width: 767px) {

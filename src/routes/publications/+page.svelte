@@ -1,7 +1,3 @@
-<h1>Publications</h1>
-
-<br>
-
 <script>
 
     let publications = [
@@ -51,6 +47,18 @@
     publications.sort((a, b) => new Date(b.date) - new Date(a.date));
 </script>
   
+
+<section class="full-width-section">
+  
+  <div class="header">
+    <h2>Publications</h2>
+    <!-- {#if $selectedTag}
+    <button class="clear-tag-button" on:click={clearTag}>Clear Tag Filter</button>
+    {/if} -->
+  </div>
+  
+  <div class="divider"></div>
+  
 <div class="publications">
     {#each publications as {title, authors, date, publication, url}}
       <div class="publication">
@@ -62,8 +70,32 @@
     {/each}
 </div>
 
+</section>
 
 <style>
+    h2 {
+      margin: 0;
+      padding: 0;
+      font-weight: 300;
+      margin-bottom: 2vh;
+    }
+    
+    .full-width-section {
+      width: 90vw;
+      max-inline-size: 1440px;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      margin-inline: auto;
+      padding-inline: var(--size-7);
+      padding: var(--size-7);
+      box-sizing: border-box;
+    }
+
+    .divider {
+      border-top: 1px solid #000;
+      padding: 1rem;
+    }
+  
     .publication {
       margin-bottom: 2rem;
     }
@@ -76,6 +108,7 @@
     .publication-info {
       font-style: italic;
     }
+
   </style>
   
 

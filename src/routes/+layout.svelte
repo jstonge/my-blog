@@ -35,14 +35,16 @@
         flex-direction: column;
     }
 
+    /* Hero full width or with some padding */
     .content {
         flex: 1;
-        padding: 1rem; /* Default padding */
+        /* padding: 1rem; */
     }
 
     @media only screen and (max-width: 767px) {
+        /* Hero full width or with some padding on small screen */
         .content {
-            padding: 1rem 1.5rem; /* Increased padding for smaller screens */
+            /* padding: 1rem 1.5rem; */
         }
     }
 

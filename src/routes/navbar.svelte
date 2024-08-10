@@ -14,6 +14,7 @@
         <ul>
             <li on:click={()=>{isMenuOpen = false}}><a class:current={current===0} on:click={() => current = 0} href="/about">About</a></li> 
             <li on:click={()=>{isMenuOpen = false}}><a class:current={current===1} on:click={() => current = 1} href="/archive">Archive</a></li>
+            <li on:click={()=>{isMenuOpen = false}}><a class:current={current===2} on:click={() => current = 2} href="/publications">Publications</a></li>
         </ul>
     </nav>
     <button class="burger" on:click={toggleMenu} class:open={isMenuOpen}>

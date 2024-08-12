@@ -6,9 +6,10 @@ categories:
   - paper
   - dashboard
   - phd
+  - GMEs
 published: true
 pinned: true
-coverImage: src/lib/thumbnails/stories/modeling.webp
+coverImage: modeling.webp
 ---
 
 With our paper being published in [Royal Society B](https://royalsocietypublishing.org/journal/rspb), I finally decided to do a small [observable framework](https://joint-lab.observablehq.cloud/hello-gmes/) compiling the main takeaways of our group-based formalism to study contagion. 

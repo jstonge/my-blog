@@ -98,6 +98,10 @@ html {
 		--width-padded-mobile: 90vw;
 		--margin-left-mobile: 5vw;
 
+		--primary: #333;
+		--secondary: #f4f4f4;
+		--dark: #333;
+		--light: #f4f4f4;
 	}
 }
 
@@ -127,6 +131,13 @@ html {
 	--surface-4: var(--surface-4-light);
 	--background: var(--background-light);
 	--border: var(--border-light);
+}
+
+@media (max-width: 768px) {
+    body {
+        padding-left: 5vw;
+        padding-right: 5vw;
+    }
 }
 
 html,
@@ -254,3 +265,21 @@ mark::before, mark::after, del::before, del::after, ins::before, ins::after, s::
 	position: absolute;
 	width: 1px;
   }
+  
+:global(*) {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	text-decoration: none;
+}
+
+:global(body) {
+	max-width: 100%;
+	overflow-x: hidden;
+	height: 100%
+}
+:global(html) {
+	max-width: 100%;
+	overflow-x: hidden;
+	height: 100%
+}

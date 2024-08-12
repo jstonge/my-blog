@@ -8,7 +8,7 @@ categories:
   - phd
 published: true
 pinned: true
-coverImage: src/lib/thumbnails/stories/cgs-ver-abstract.webp
+coverImage: cgs-ver-abstract.webp
 ---
 
 <script>
@@ -49,7 +49,9 @@ What explains large-scale collaboration among unrelated individuals? For anthrop
 
 First, what are group-level cultural traits. In his book on the <a href="https://us.macmillan.com/books/9780374710453/theweirdestpeopleintheworld">The WEIRDest People in the World</a> (that's us Westerners), Joe Henrich tells the story of how Ilahita, a traditional society from New Guinea, got big for that time and place (≫300 people). How? A collection of stories, myths, and rites of terror that have facilitated interactions among distantly related households.
 
-<img src="https://raw.githubusercontent.com/jstonge/blog/main/static/tambaran-spirit-house.webp" class="margin-note-image" alt="tzamabaran spirit house"/>
+<div class="parent-container margin-note-image">
+  <img src="https://raw.githubusercontent.com/jstonge/blog/main/static/tambaran-spirit-house.webp" alt="tzamabaran spirit house"/>
+</div>
 
 For instance, every household raises pigs, but they find that eating their own pigs is disgusting because it would be like eating one of their own's kid. This means that groups must exchange pigs at communal ceremonies. Furthermore, those ceremonies involve rites of passage for boys to become men (meaning boys can marry, learn about secret ritual knowledge, and climb the political ladder). The catch is that those rites must be performed by an opposite ritual group, meaning your success isn't solely dependent on your own group. 
 
@@ -228,7 +230,6 @@ In the next part of the series, we look at how CGS can relate to group-based mas
 
 <style>
 
-  /* Style for margin note */
 .margin-note-image {
     font-size: 12px;
     width: 300px;  /* Set the width of the image */
@@ -236,16 +237,6 @@ In the next part of the series, we look at how CGS can relate to group-based mas
     margin-left: 20px; /* Space between the text and the image */
     margin-right: -300px; /* Pull the image into the right margin */
     position: relative; /* Position relative to its normal position */
-    top: 0; /* Align the top of the image with the top of the paragraph */
-}
-
-.margin-note-image-big {
-    width: 300px;  /* Set the width of the image */
-    float: right;  /* Align the image to the right */
-    margin-left: 20px; /* Space between the text and the image */
-    margin-right: -300px; /* Pull the image into the right margin */
-    position: relative; /* Position relative to its normal position */
-    top: 0; /* Align the top of the image with the top of the paragraph */
 }
 
 .margin-note-text {
@@ -310,14 +301,13 @@ section {
 
 @media (max-width: 768px) {
     
-    .margin-note-image,
-    .margin-note-image-big {
-        float: none; /* Align image with text */
-        width: 70%; /* Make the image responsive */
-        margin: 0 auto; 
-        padding-top: 10px;  
-        padding-bottom: 10px;  
-        border-radius: 15%; /* Make the image round in the corner */
+    .margin-note-image {
+      font-size: 12px;
+      width: 80%;  /* Set the width of the image */
+      margin: 0 auto; /* Center the image horizontally */
+      display: block; /* Ensure the image behaves as a block-level element */
+      float: none; /* Align image with text */
+      border-radius: 15%; /* Make the image round in the corner */
     }
     
     .margin-note-image-math {
@@ -333,7 +323,7 @@ section {
     }
 
     .parent-container {
-      padding-top: 2rem;
+      padding-top: 0.5rem;
     }
 
     .step {
@@ -348,6 +338,7 @@ section {
       box-shadow: 1px 1px 30px rgba(0, 0, 0, 1);
       display: inline-block;
   }
+
     
 }
 

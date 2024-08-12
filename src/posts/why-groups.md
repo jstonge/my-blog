@@ -3,7 +3,7 @@ title: WEIRD scientists dislike group-level behaviors (WIP)
 description: Compile all the (social) groups
 date: '2024-07-08'
 categories:
-  - lit=Review
+  - litReview
 published: false
 pinned: false
 coverImage: ../thumbnails/stories/cgs-ver-abstract.webp

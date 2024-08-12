@@ -5,9 +5,10 @@ date: '2024-07-16'
 categories:
   - litReview
   - phd
-published: false
-pinned: false
-coverImage: src/lib/thumbnails/stories/cgs-ver-abstract.webp
+  - GMEs
+published: true
+pinned: true
+coverImage: tragedy.webp
 ---
 
 <script>
@@ -26,24 +27,33 @@ Following <a href="https://press.uchicago.edu/ucp/books/book/chicago/M/bo4343149
 
 Assuming <em>i</em> collaborate when everybody do their part, you ask what happens when you let a mutant loose in that sea of conditional cooperators. In the book, we find that this strategy is stable against systematic defection when
 
-<div class="container">
-  <Katex math={"\\frac{b-c}{1-w} > \\frac{n-1}{n}b"}/>
-</div>
+<big>
+  <div class="math-container">
+    <Katex math={"\\frac{b-c}{1-w} > \\frac{n-1}{n}b"}/>
+  </div>
+</big>
 
 The key insight here is that provided you have a Tit-for-Tat strategy fighting against defectors, altruism is harder to kick start with larger groups because it gets harder and harder to get everybody on board. One way out of this conundrum is altruistic punishment, which has been explored at large by the game theory aficionados.
 
 ### Adding structure to the problem
 
-<div style="width: 90%; margin-top: 2vh; margin-bottom: 2vh;">
-  <img src="https://raw.githubusercontent.com/jstonge/blog/main/static/ohtsukiSimple2006.webp" alt="fig. 1 Ohtsuki et al. 2006"/>
-  <!-- <figcaption class="container"><b>Fig. 1 Ohtsuki et al. 2006</figcaption> -->
-</div>
-Having a structured population is another way to get assortment; with cooperators interacting more often than not they are going to meet repeatedly, favoring the evolution of cooperation (<a href="https://www.semanticscholar.org/paper/A-simple-rule-for-the-evolution-of-cooperation-on-Ohtsuki-Hauert/ee557d8918504b3098de11e696b9b5c484702ae1">Ohtsuki et al. 2006</a>). Starting in the 2000s, scale-free networks were all the hype in that literature; that is, if degree distribution <em>k</em> is dependent on 
+<figure style="width: 90%; margin-top: 2vh; margin-bottom: 2vh;">
+  <img src="https://raw.githubusercontent.com/jstonge/blog/main/static/ohtsukiSimple2006.webp" alt="fig. 1 Ohtsuki et al. 2006" />
+  <figcaption style="text-align: center; margin-top: 0.5rem;">
+    <em>Fig. 1 <a href="https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC2430087&blobtype=pdf">Ohtsuki et al. 2006</a></em>
+  </figcaption>
+</figure>
+
+Having a structured population is another way to get assortment; with cooperators interacting more often than not they are going to meet repeatedly, favoring the evolution of cooperation (<a href="https://europepmc.org/backend/ptpmcrender.fcgi?accid=PMC2430087&blobtype=pdf">Ohtsuki et al. 2006</a>). Starting in the 2000s, scale-free networks were all the hype in that literature; that is, if degree distribution <em>k</em> is dependent on 
 <Katex math={"d(k) \\sim k^{-\\gamma}"}/> with exponent <Katex math={"2 \\leq \\gamma \\leq 3"}/>, individuals are strongly correlated (<a href="https://www.semanticscholar.org/paper/Scale-free-networks-provide-a-unifying-framework-of-Santos-Pacheco/824f6e30654db760358e59719779fb7285d18332">Santos and Pacheco 2005</a>). A well known results by Ohtsuki et al. (2006) is that cooperation can evolve simply with <Katex math={"b/c \\gt k"}/>, or if the cost-benefit ratio exceeds the average numbers of neighbours <em>k</em>. 
 
-<div class="margin-note">
-  <img src="https://raw.githubusercontent.com/jstonge/blog/main/static/rsif20120997f08.webp" alt="Fig. 8 Perc et al. 2013"/>
-  <!-- <figcaption class="container"><b>Fig. 8 Perc et al. 2013</figcaption> -->
+<div class="container">
+  <figure class="margin-note-image">
+    <img src="https://raw.githubusercontent.com/jstonge/blog/main/static/rsif20120997f08.webp" alt="Fig. 8 Perc et al. 2013"/>
+    <figcaption style="text-align: center; margin-top: 0.5rem;">
+      <em>Fig. 8 <a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2012.0997">Perc et al. 2013</a></em>
+    </figcaption>
+  </figure>
 </div>
 
 It was not long before physicists started exploring how features of pairwise interactions generalize to higher-order networks (<a href="https://www.nature.com/articles/nature06940">Santos et al. 2008</a><a href="https://royalsocietypublishing.org/doi/full/10.1098/rsif.2012.0997">Perc et al. 2013</a>, <a href="https://www.nature.com/articles/s41562-020-01024-1">Alvarez-Rodriguez et al. 2021</a>). In this case, public good games are simply taken to be group interactions played on structured populations. And much of the early modeling efforts was to see how this choice of structures impact results from pairwise land. 
@@ -52,14 +62,16 @@ With group interactions, we now have degree heterogeneity in how many games peop
 
 The realm of PGGs can be splited across at least three different communities; (B) biology-is-enough (Nowak et al), (C) culture-inclined people (Boyd, Richerson, Bowles, Gintis, et al.), and (P) physics of PGGs (Perc, Gómez-Gardeñes, Moreno et al). There is also the common-pool resources people (CPR; Ostrom et al.), which are more interested in how communities self-organize to promote public goods sustainability. Lastly, there are people who are interested in what is happenning out there, both in laboratories and across cultures. We come back to them later. They all share the common premise that groups in collective action problem are defined by people participating to public good games; you select <em>n</em> individuals from your population to play a game, then you see what mechanism can lead to a an evolutionary stable state of the altruistic behaviors. They agree that cooperation in larger groups is something to be explained, as it does not result from classical game theory. They tend to disagree on the answer. A solution proned by (B) and (P) is that more structured populations together with classical mechanisms altruistic behaviors (aka reciprocity) can explain large-scale cooperation.  
 
-All PGGs share that there is a cost  <Katex math="\alpha(p_c)" /> and benefit function <Katex math="\beta(p_c)" /> and <Katex math="p_c" /> is the fraction of cooperators. PGGs are interested in the change in the fraction of cooperators under the effect of Darwinian selection, encapsulate by the replicator dynamics <Katex math="\dot x = x(1-x)[W_C(x)-W_D(x)]"/> [TODO explain that, before moving to GMEs]
+All PGGs share that there is a cost  <Katex math="\alpha(p_c)" /> and benefit function <Katex math="\beta(p_c)" /> and <Katex math="p_c" /> is the fraction of cooperators. PGGs are interested in the change in the fraction of cooperators under the effect of Darwinian selection, encapsulate by the replicator dynamics <Katex math="\dot x = x(1-x)[W_C(x)-W_D(x)]"/> 
+
+<!-- [TODO explain the above, before moving to GMEs] -->
 
 #### The probability flow of PPGs
 
 Instead of following the fraction of cooperators in the population, we first 
 
-<div class="container">
-<Katex math={"\\dot{G}_{C,D} = "}/>
+<div class="math-container">
+  <Katex math={"\\dot{G}_{C,D} = "}/>
 </div>
 
 
@@ -75,21 +87,40 @@ After the original scenarios from the last century, PGG experienced an evolution
  + Multiple PGG: people can play different public good games at once (<a href="https://www.semanticscholar.org/paper/An-Institutional-Mechanism-for-Assortment-in-an-of-Smaldino-Lubell/aa2adf8477adaabd6336636f3ae8fd573e18a848">Smaldino & Lubel 2011</a>)
 
 <style>
-  .container {
-    display: flex;
-    justify-content: center; /* Center horizontally */
-    align-items: center;    /* Center vertically */
-    margin-top: 2vh;
-  }
+  
+  .math-container {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center;    /* Center vertically */
+      margin-top: 5vh;
+    }
 
   /* Style for margin note */
-  .margin-note {
-      font-size: 12px;
-      width: 30vw;  /* Set the width of the image */
-      float: right;  /* Align the image to the right */
-      margin-top: 2vw; /* Space between the text and the image */
-      margin-left: 2vw; /* Space between the text and the image */
-      position: relative; /* Position relative to its normal position */
+  .margin-note-image {
+    font-size: 12px;
+    width: 370px;  /* Set the width of the image */
+    float: right;  /* Align the image to the right */
+    margin-left: 20px; /* Space between the text and the image */
+    margin-right: -400px; /* Pull the image into the right margin */
+    position: relative; /* Position relative to its normal position */
+  }
+
+  @media (max-width: 768px) {
+    .container {
+      display: flex;
+      justify-content: center; /* Center horizontally */
+      align-items: center;    /* Center vertically */
+      margin-top: 2vh;
+    }
+
+    .margin-note-image {
+        font-size: 12px;
+        width: 100%;  /* Set the width of the image */
+        margin: 0 auto; /* Center the image horizontally */
+        display: block; /* Ensure the image behaves as a block-level element */
+        float: none; /* Align image with text */
+        border-radius: 15%; /* Make the image round in the corner */
+      }
   }
 
 </style>

@@ -52,4 +52,21 @@
 		padding: var(--size-2) var(--size-3);
 		border-radius: var(--radius-round);
 	}
+
+	/* Existing CSS */
+
+@media screen and (max-width: 767px) {
+
+    .tags {
+        display: flex;
+        flex-wrap: wrap; /* Allow tags to wrap to a new line */
+        justify-content: left; /* Center the tags */
+        gap: 0.5rem; /* Adjust gap between tags */
+    }
+
+    .tags > * {
+        white-space: nowrap; /* Prevent tags from breaking onto multiple lines */
+    	}
+	}
+
 </style>

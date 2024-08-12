@@ -30,10 +30,11 @@
   
   <section class="full-width-section">
 
+	
 	<div class="header">
 		<h2>Blog entries</h2>
 		{#if $selectedTag}
-		  <button class="clear-tag-button" on:click={clearTag}>Clear Tag Filter</button>
+		<button class="clear-tag-button" on:click={clearTag}>Clear Tag Filter</button>
 		{/if}
 	</div>
 
@@ -43,7 +44,7 @@
 	  <span>Date</span>
 	  <span>Description</span>
 	  <span>Cover</span>
-	  <span>Tags</span>
+	  <span class="tags">Tags (click to filter)</span>
 	</div>
   
 	<div class="divider"></div>

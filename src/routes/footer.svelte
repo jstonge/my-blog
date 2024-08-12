@@ -7,6 +7,7 @@
 </footer>
 
 <style>
+	
 	footer {
 		margin-top: 3rem;
 		padding-block: var(--size-7);

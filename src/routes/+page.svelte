@@ -51,7 +51,7 @@
             <li class="post column-wide">
                 <div class="content">
                     <h4 tabindex="-1" dir="auto">
-                        <a href={project.source}>
+                        <a href={project.slug}>
                             <code>{project.title}</code>
                         </a> <p class="status">Status: {project.status}</p>
                     </h4>
@@ -77,9 +77,6 @@
 
     .post {
         padding: var(--size-5) 0;
-        /* align-items: flex-start; */
-        /* padding: 4rem 1; */
-        /* vertical-align: baseline; */
         margin-bottom: 0.25rem;
         box-sizing: border-box;
     }
@@ -163,20 +160,31 @@
 
     /* On small screens, hide the nav and show the burger */
     @media screen and (max-width: 767px) {
+        .post {
+            align-items: flex-start;
+            padding: 4rem 1;
+            vertical-align: baseline;
+        }
+        
         .hero h3 {
             font-size: 5.5vw;
         }
 
         .post-content {
-        flex-direction: column;
-        align-items: center;
-        text-align: center;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 0 1rem; /* Add some padding to the post content */
+            width: 100%;
         }
 
         .cover-image {
-        width: 100%;
-        margin: 0 0 20px 0;
+            width: 100%;
+            margin: 0 0 20px 0;
+        }
 
+        .content {
+            width: 100%; /* Ensure the content takes full width */
         }
     }
 </style>

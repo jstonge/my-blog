@@ -33,7 +33,9 @@
         min-height: 100vh;
         display: flex;
         flex-direction: column;
+        margin: 0;
     }
+    
 
     /* Hero full width or with some padding */
     .content {
@@ -48,29 +50,5 @@
         }
     }
 
-    :global(root) {
-        --primary: #333;
-        --secondary: #f4f4f4;
-        --dark: #333;
-        --light: #f4f4f4;
-    }
-
-    :global(*) {
-        margin: 0;
-        padding: 0;
-        box-sizing: border-box;
-        text-decoration: none;
-    }
-
-    :global(body) {
-        max-width: 100%;
-        overflow-x: hidden;
-        height: 100%
-    }
-    :global(html) {
-        max-width: 100%;
-        overflow-x: hidden;
-        height: 100%
-    }
-
+    
 </style>

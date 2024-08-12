@@ -135,7 +135,7 @@
 
     .hero h3 {
         margin: 2rem 2rem 0rem;
-        font-size: 2.5vw;
+        font-size: 1.7vw;
         font-weight: 300;
         line-height: 1;
         background: linear-gradient(90deg, #ebc7a3 0%, #87bd8b 100%);
@@ -160,13 +160,16 @@
 
     /* On small screens, hide the nav and show the burger */
     @media screen and (max-width: 767px) {
+
         .post {
-            align-items: flex-start;
-            padding: 4rem 1;
-            vertical-align: baseline;
+            margin: 0 auto;
+            box-sizing: border-box;
+            margin-bottom: 0.25rem;
+            padding: var(--size-5) 0;
         }
         
         .hero h3 {
+            margin: 2rem 0rem 0rem;
             font-size: 5.5vw;
         }
 

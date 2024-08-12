@@ -2,7 +2,7 @@
 title: Course Catalogs
 status: Ongoing
 description: How do academic institutions reflect societies?
-source: 
+source: https://github.com/jstonge/catDB
 date: '2024-07-05'
 categories:
   - modeling
@@ -10,7 +10,7 @@ categories:
 published: true
 pinned: false
 type: project
-coverImage: 
+coverImage: ccCali.webp
 ---
 
 Coming soon.

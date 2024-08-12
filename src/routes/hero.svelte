@@ -72,7 +72,7 @@
   top: 35%;
   left: 50%;
   transform: translate(-50%, -50%);
-  font-size: 5vw;
+  font-size: 3vw;
   font-family: var(--font-sans);
   letter-spacing: 0.12em;
   color: var(--text-3-dark);
@@ -83,10 +83,11 @@
 .subtitle {
   text-align: center;
   position: relative;
+  max-width: 50vw;
   top: 45%;
   left: 50%;
   transform: translate(-50%, 0);
-  font-size: 2vw;
+  font-size: 1.5vw;
   letter-spacing: 0.1em;
   color: var(--text-3-dark);
   font-weight: 200;

@@ -1,7 +1,7 @@
 ---
 title: Groups groups groups
 status: Ongoing
-description: A collection of entries, tied together by the idea of defining, modeling, and measuring social groups.
+description: Where we define, model, and measure social groups adopting a trandiscplinary perspective.
 source: https://jstonge.observablehq.cloud/hello-research-groups/
 date: '2024-02-05'
 categories:

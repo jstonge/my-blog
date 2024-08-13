@@ -44,7 +44,33 @@
 </section>
 
 <div class="hero">
+    <h3>Fun/Social goods</h3>
+</div>
+
+<section>
+    <ul class="posts">
+        {#each funPosts as post, i}
+            <li class="post column-wide">
+                <div class="post-content">
+                    <img src={post.coverImage} alt={post.title} class="cover-image">
+                    <div class="content">
+                        <a href={post.slug} class="title">{post.description}</a>
+                        <p class="date">{formatDate(post.date)}</p>
+                        <div class="tags">
+                            {#each post.categories as category}
+                                <p class="surface-4">&num;{category}</p>
+                            {/each}
+                        </div>
+                    </div>
+                </div>
+            </li>
+        {/each}
+    </ul>
+</section>
+
+<div class="hero">
     <h3>Selected Projects</h3>
+    <em>Collection of entries, weaved together by a common theme.</em>
 </div>
 
 <section>
@@ -52,10 +78,8 @@
         {#each projects as project, i}
             <li class="post column-wide">
                 <div class="project-content">
-                    <h4 tabindex="-1" dir="auto">
-                        <a href={project.slug}>
-                            <code>{project.title}</code>
-                        </a> <p class="status">Status: {project.status}</p>
+                    <h4>
+                        <a class="title" href={project.slug}>{project.title}</a> <p class="status">Status: {project.status}</p>
                     </h4>
                     <img src={project.coverImage} alt="hello-research-group" class="cover-image" style="margin-top:1rem; margin-bottom:1rem">
                     <p>
@@ -71,36 +95,6 @@
         
     </ul>
 </section>
-
-<div class="hero">
-    <h3>Fun/Social goods</h3>
-</div>
-
-<section>
-    <ul class="posts">
-        {#each funPosts as post, i}
-            <li class="post column-wide">
-                <div class="project-content">
-                    <h4 tabindex="-1" dir="auto">
-                        <a href={post.slug}>
-                            <code>{post.title}</code>
-                        </a> <p class="status">Status: {post.status}</p>
-                    </h4>
-                    <img src={post.coverImage} alt="hello-research-group" class="cover-image" style="margin-top:1rem; margin-bottom:1rem">
-                    <p>
-                        <a href={post.source} style="text-decoration: underline; text-underline-offset: .2rem;">Source</a> 
-                        {#if post.extraSource !== undefined}
-                            (<a href={post.extraSource} style="text-decoration: underline; text-underline-offset: .2rem;">Source 2</a>)
-                        {/if}
-                        ·  {post.description}
-                    </p>
-                </div>
-            </li>
-        {/each}
-        
-    </ul>
-</section>
-
 
 <style>
 
@@ -181,6 +175,12 @@
 		font-size: 1.25em;
 		line-height: 1.25;
     }
+    
+    em {
+        font-size: 1.05em;
+        line-height: 1.25;
+        margin: 0.3rem 2rem 0rem;
+    }
 
     .status {
 		font-size: var(--font-size-fluid-3);
@@ -205,6 +205,11 @@
         .hero h3 {
             margin: 2rem 0rem 0rem;
             font-size: 5.5vw;
+        }
+
+        em {
+            margin: 0.3rem 0rem 0rem;
+            font-size: 3vw;
         }
 
         .post-content {

@@ -1,7 +1,7 @@
 ---
 title: Course Catalogs
 status: Ongoing
-description: How do academic institutions reflect societies?
+description: Using LLMs to parse and structure historical course catalogs to better understand how academic institutions and societies coevolve.
 source: https://github.com/jstonge/catDB
 date: '2024-07-05'
 categories:

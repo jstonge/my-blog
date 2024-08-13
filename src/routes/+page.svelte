@@ -82,7 +82,8 @@
             <li class="post column-wide">
                 <div class="project-content">
                     <h4>
-                        <a class="title" href={project.slug}>{project.title}</a> <p class="status">Status: {project.status}</p>
+                        <p><a class="title" href={project.slug}>{project.title}</a> 
+                        <p class="status">Status: {project.status}</p>
                     </h4>
                     <img src={project.coverImage} alt="hello-research-group" class="cover-image" style="margin-top:1rem; margin-bottom:1rem">
                     <p>
@@ -136,7 +137,7 @@
         flex: 1;
         padding: 0 var(--size-10);
     }
-
+    
     .date {
         color: var(--text-3-dark);
         font-size: var(--font-size-fluid-2);
@@ -197,7 +198,6 @@
 		padding: var(--size-1) var(--size-3);
 		border: 1px solid var(--border);
 		border-radius: var(--radius-round);
-		margin: var(--size-2); 
 	}
     
 
@@ -210,6 +210,15 @@
             margin-bottom: 0.25rem;
             padding: var(--size-5) 0;
         }
+
+        .project-content {
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            padding: 0 1rem; /* Add some padding to the post content */
+            width: 100%;
+        }
+    
         
         .hero h3 {
             margin: 2rem 0rem 0rem;
@@ -237,5 +246,6 @@
         .content {
             width: 100%; /* Ensure the content takes full width */
         }
+
     }
 </style>

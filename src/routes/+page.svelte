@@ -7,7 +7,8 @@
     
     const pinnedPosts = data.posts.filter(post => post.pinned);
     const projects = data.posts.filter(post => post.type === 'project');
-    console.log(projects.map(d => d.extraSource))
+    const funPosts = data.posts.filter(post => post.type === 'fun');
+    
 </script>
 
 <svelte:head>
@@ -15,6 +16,7 @@
 </svelte:head>
 
 <Hero />
+
 
 <div class="hero">
     <h3>Recent posts</h3>
@@ -49,7 +51,7 @@
     <ul class="posts">
         {#each projects as project, i}
             <li class="post column-wide">
-                <div class="content">
+                <div class="project-content">
                     <h4 tabindex="-1" dir="auto">
                         <a href={project.slug}>
                             <code>{project.title}</code>
@@ -70,7 +72,38 @@
     </ul>
 </section>
 
+<div class="hero">
+    <h3>Fun/Social goods</h3>
+</div>
+
+<section>
+    <ul class="posts">
+        {#each funPosts as post, i}
+            <li class="post column-wide">
+                <div class="project-content">
+                    <h4 tabindex="-1" dir="auto">
+                        <a href={post.slug}>
+                            <code>{post.title}</code>
+                        </a> <p class="status">Status: {post.status}</p>
+                    </h4>
+                    <img src={post.coverImage} alt="hello-research-group" class="cover-image" style="margin-top:1rem; margin-bottom:1rem">
+                    <p>
+                        <a href={post.source} style="text-decoration: underline; text-underline-offset: .2rem;">Source</a> 
+                        {#if post.extraSource !== undefined}
+                            (<a href={post.extraSource} style="text-decoration: underline; text-underline-offset: .2rem;">Source 2</a>)
+                        {/if}
+                        ·  {post.description}
+                    </p>
+                </div>
+            </li>
+        {/each}
+        
+    </ul>
+</section>
+
+
 <style>
+
     .posts {
         padding: 0;        
     }
@@ -102,8 +135,9 @@
         margin-right: var(--size-5);
     }
 
-    .content {
+    .project-content {
         flex: 1;
+        padding: 0 var(--size-10);
     }
 
     .date {

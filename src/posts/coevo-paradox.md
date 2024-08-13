@@ -1,22 +1,22 @@
 ---
 title: Paradoxes in the co-evolution of contagions and institutions
-description: Using group-based master equations to model the coevolution of policies and behaviors in contagion.
+description: Modeling the coevolution of policies and behaviors in contagion.
 date: '2024-06-20'
 categories:
   - paper
   - dashboard
   - phd
   - GMEs
+  - julia
 published: true
 pinned: true
 coverImage: modeling.webp
+live: https://joint-lab.observablehq.cloud/hello-gmes/
+source: https://github.com/jstonge/hello-gmes
 ---
 
-With our paper being published in [Royal Society B](https://royalsocietypublishing.org/journal/rspb), I finally decided to do a small [observable framework](https://joint-lab.observablehq.cloud/hello-gmes/) compiling the main takeaways of our group-based formalism to study contagion. 
+With our paper being published in [Royal Society B](https://royalsocietypublishing.org/journal/rspb), I  decided to do a small [observable framework](https://joint-lab.observablehq.cloud/hello-gmes/) compiling the main takeaways of our group-based formalism to study contagion. 
 
-<br>
-<iframe width="100%" height="600px" frameborder="0" class="crop" title="rsb dashboard"
-  src="https://observablehq.com/embed/@jstonge/computational-embeddings@latest?cell=*"></iframe>
 
 <style>
 .crop {

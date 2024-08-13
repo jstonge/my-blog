@@ -14,4 +14,4 @@ type: project
 coverImage: cgs-ver-abstract.webp
 ---
 
-hello world
+🚧 Coming soon 🚧

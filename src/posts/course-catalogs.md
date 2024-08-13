@@ -13,4 +13,4 @@ type: project
 coverImage: ccCali.webp
 ---
 
-Coming soon.
+🚧 Coming soon 🚧

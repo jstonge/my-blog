@@ -13,4 +13,5 @@ export type Post = {
 	pinned: boolean
 	type: string
 	coverImage: string
+	live: string
 }

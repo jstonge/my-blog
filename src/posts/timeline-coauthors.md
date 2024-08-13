@@ -1,24 +1,18 @@
 ---
 title: Timeline coauthors
-description: Rethinking everything.
+description: Coauthorship-papers coevolution
 date: '2023-06-14'
 categories:
   - measuringGroups
   - phd
 published: true
 pinned: true
-coverImage: https://raw.githubusercontent.com/jstonge/hello-research-groups/main/docs/assets/measuring.webp
+coverImage: measuring.webp
+live: https://jstonge.observablehq.cloud/hello-research-groups/results/timeline
+source: https://raw.githubusercontent.com/jstonge/hello-research-groups/main/docs/results/timeline.md
 ---
 
-I wrote a small [observable framework entry](https://jstonge.observablehq.cloud/hello-research-groups/results/timeline) for visualizing the evolution of both coauthors and papers for a given author. What I like about it is that we can see a wide variability of patterns of coauthorships and productivity, that we know are closely related. 
-
-<br>
-<div class="container"> 
-<iframe
-  class="responsive-iframe" 
-  src="https://jstonge.observablehq.cloud/hello-research-groups/results/timeline">
-</iframe>
-</div>
+What is the relationship between coauthors and scientific productivity?  It depends. On a lot of things. In this notebook, lets try to represent the wide variability of patterns of coauthorships and productivity, that we know are closely related. 
 
 In addition to the dodge dot plots, there is a timeseries of number of coauthors, with dots colored by relative academic age of coauthors. The line is the output of a bayesian switchpoint that looks for two different poisson rates.  It works well in some cases, but not others.
 

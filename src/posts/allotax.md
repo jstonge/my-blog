@@ -15,4 +15,4 @@ type: project
 coverImage: allotax.webp
 ---
 
-coming soon.
+🚧 Coming soon 🚧

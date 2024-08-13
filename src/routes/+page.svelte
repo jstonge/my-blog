@@ -31,6 +31,9 @@
                     <div class="content">
                         <a href={post.slug} class="title">{post.description}</a>
                         <p class="date">{formatDate(post.date)}</p>
+                        {#if post.live}
+                            <p class="live">View live: <a href={post.live}>{post.live}</a></p>
+                        {/if}
                         <div class="tags">
                             {#each post.categories as category}
                                 <p class="surface-4">&num;{category}</p>
@@ -137,6 +140,12 @@
     .date {
         color: var(--text-3-dark);
         font-size: var(--font-size-fluid-2);
+        margin-bottom: var(--size-1);
+    }
+    
+    .live {
+        color: var(--text-3-dark);
+        font-size: var(--font-size-fluid-3);
         margin-bottom: var(--size-2);
     }
 

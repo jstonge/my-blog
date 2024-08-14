@@ -15,10 +15,10 @@
 		<h1>{data.meta.title}</h1>
 		<p>Published at {formatDate(data.meta.date)}</p>
 		{#if data.meta.live}
-				<p>View live: <a href={data.meta.live}>{data.meta.live}</a></p>
+				<p>View live: <a href={data.meta.live}>{data.meta.live.split("/").at(-1)}</a></p>
 		{/if}
 		{#if data.meta.source}
-				<p>Source: <a href={data.meta.source}>{data.meta.source}</a></p>
+				<p>Source: <a href={data.meta.source}>{data.meta.source.split("/").at(-1)}</a></p>
 		{/if}
 	</hgroup>
 

@@ -2,7 +2,7 @@
 title: Allotaxonometry for all
 status: Deployed
 description: Bringing allotaxonometry to the masses. 
-live: https://allotaxp.vercel.app/
+live: https://allotaxp.vercel.app
 source: https://github.com/jstonge/allotaxp
 date: '2024-07-05'
 categories:

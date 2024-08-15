@@ -1,5 +1,5 @@
 ---
-title: Allotaxonometry for all
+title: ALLotaxonometry
 status: Deployed
 description: Bringing allotaxonometry to the masses. 
 live: https://allotaxp.vercel.app

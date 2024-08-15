@@ -3,6 +3,7 @@ title: Having a newborn child
 description: Is she taking enough weight?
 date: '2024-08-18'
 source: https://github.com/jstonge/baby-log
+live: https://jstonge.github.io/baby-log
 categories:
   - babyStuff
   - ObsFramework
@@ -10,7 +11,6 @@ published: true
 pinned: false
 type: fun
 coverImage: DashboardB.webp
-live: https://jstonge.github.io/baby-log/
 ---
 
 <script>

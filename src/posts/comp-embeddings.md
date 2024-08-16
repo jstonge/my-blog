@@ -5,7 +5,7 @@ date: '2024-05-10'
 categories:
   - framework
   - pan & zoom
-  - d3
+  - D3
 published: true
 pinned: false
 coverImage: comp-embeddings.webp

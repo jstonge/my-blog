@@ -32,7 +32,7 @@
                         <a href={post.slug} class="title">{post.description}</a>
                         <p class="date">{formatDate(post.date)}</p>
                         {#if post.live}
-                            <p class="live">View live: <a href={post.live}>{post.live}</a></p>
+                            <p class="live">View live: <a href={post.live}>{post.live.split("/").at(-1)}</a></p>
                         {/if}
                         <div class="tags">
                             {#each post.categories as category}

@@ -3,8 +3,7 @@ title: How do scientific concepts evolve??
 description: s2orc augmented with openAlex concepts.
 date: '2024-03-12'
 categories:
-  - fleeting notes
-  - data viz
+  - s2orc
 published: true
 published: false
 ---

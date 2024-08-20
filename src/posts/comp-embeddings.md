@@ -1,45 +1,35 @@
 ---
 title: Computational Embeddings
 description: Visualizing similarity using umap+hdbscan
-date: '2024-05-10'
+date: 2024-05-10
 categories:
-  - framework
   - pan & zoom
   - D3
 published: true
 pinned: false
 coverImage: comp-embeddings.webp
+live: https://observablehq.com/@jstonge/computational-embeddings
 ---
 
-This is a small [observable notebook](https://observablehq.com/@jstonge/computational-embeddings) for visualizing the s2orc's embeddings of papers with mention of the 'computational' keyword. 
+<div class="caution">🚧 WIP 🚧</div>
 
-<div class="container" style="margin-top: 5vh;"> 
-<iframe
-  class="responsive-iframe" 
-  title="s2orc comp embedding"
-  src="https://observablehq.com/embed/@jstonge/computational-embeddings@latest?cell=*">
-</iframe>
-</div>
+<script>
+	import compEmb from '$lib/assets/comp-embedding.webp';
+</script>
+
+As part of my PhD, I got interested in how field of studies are increasingly becoming "computational". But "computational" means different things to different communities. What I had in mind by computational is something like "scientific works that rely on computer programming". This definition was a bit naive, so I started to look at paper embeddings to see the various use of it. 
+
+Here are all papers on the S2ORC database mentionning the 'computational' keyword:
+
+<img alt="comp-embedding" class="image" src={compEmb} />
+
+Here the colors represent field of studies (I annotated a few of them).  
 
 <style>
-.container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 800px;
-  width: 90vw;
-  max-width: 1200px;
-  margin: auto;
-}
-
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  transform: translateX(-23%);
-  box-shadow: 0 0 0 0.75px rgba(128, 128, 128, 0.2), 0 6px 12px 6px rgba(0, 0, 0, 0.4);
-}
+  .image {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 0 0.75px rgba(128, 128, 128, 0.2), 0 6px 12px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+  }
 </style>

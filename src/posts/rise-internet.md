@@ -1,46 +1,35 @@
 ---
-title: The rise of computational stuff (WIP)
-description: Where and when did the internet happened? Early prototype using observable' `plot.Geo`.
-date: '2024-05-22'
+title: The geography of the internet
+description: Where and when did the internet happened?
+date: 2024-05-22
 categories:
-  - fleeting notes
-  - data viz
+  - Plot
+  - Geo
 published: true
 pinned: false
 coverImage: https://raw.githubusercontent.com/jstonge/blog/main/thumbnails/stories/rise-internet.webp
+type: fun
+live: https://observablehq.com/@jstonge/the-geography-of-the-internet
 ---
 
-This is a small [observable notebook](https://observablehq.com/@jstonge/the-spread-of-computational-thinking) for visualizing the evolution of the internet, from wikipedia. 
+<script>
+	import internet from '$lib/assets/internet.webp';
+</script>
 
-<div class="container" style="margin-top: 5vh;"> 
-<iframe
-  class="responsive-iframe" 
-  title="internet history"
-  src="https://observablehq.com/embed/@jstonge/the-spread-of-computational-thinking@latest?cell=*">
-</iframe>
-</div>
+When reading [Broad Band: The Untold Story of the Women Who Made the Internet](https://en.wikipedia.org/wiki/Broad_Band), I realized I didn't know as much about the origin of the internet and computing as I would like. One night, I got into the [Timeline of computing](https://en.wikipedia.org/wiki/Timeline_of_computing). As a big fan of cultural evolution theory, I thought it would be cool to look at the geographic spread of computing technologies (and perhaps augment it with all the information contained within Broadband). So I wrote a small [observable notebook](https://observablehq.com/@jstonge/the-spread-of-computational-thinking) for visualizing the evolution of computing/internet, directly extracted from the timeline. 
 
+<img alt="internet" class="image" src={internet} />
 
-<style type="text/css">
+It is still a work in progress. I find it hard to visualize the underlying patterns just from the world map. I added the emergence of the Arpanet, but the range filter is a bit clunky. The first few years of the Arpanet were easy enough to map, then it gets a little bit out of hand (obviously).
 
-.container {
-  position: relative;
-  padding-bottom: 56.25%; /* 16:9 */
-  padding-top: 25px;
-  height: 800px;
-  width: 90vw;
-  max-width: 1200px;
-  margin: auto;
-}
+Anyway, it was a fun little project. I might come back to it at some point.
 
-.responsive-iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: 8px;
-  transform: translateX(-23%);
-  box-shadow: 0 0 0 0.75px rgba(128, 128, 128, 0.2), 0 6px 12px 6px rgba(0, 0, 0, 0.4);
-}
+<style>
+  .image {
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 0 0 0.75px rgba(128, 128, 128, 0.2), 0 6px 12px 6px rgba(0, 0, 0, 0.4);
+    border-radius: 8px;
+  }
+
 </style>

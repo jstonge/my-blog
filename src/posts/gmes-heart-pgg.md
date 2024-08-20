@@ -11,6 +11,8 @@ pinned: true
 coverImage: tragedy.webp
 ---
 
+<div class="caution">🚧 WIP 🚧</div>
+
 <script>
   import Katex from '$lib/components/Katex.svelte';
 </script>

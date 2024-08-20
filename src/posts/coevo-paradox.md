@@ -15,6 +15,8 @@ live: https://joint-lab.observablehq.cloud/hello-gmes/
 source: https://github.com/jstonge/hello-gmes
 ---
 
+<div class="caution">🚧 WIP 🚧</div>
+
 With our paper being published in [Royal Society B](https://royalsocietypublishing.org/journal/rspb), I  decided to do a small [observable framework](https://joint-lab.observablehq.cloud/hello-gmes/) compiling the main takeaways of our group-based formalism to study contagion. 
 
 

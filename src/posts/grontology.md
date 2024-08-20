@@ -5,7 +5,7 @@ date: '2024-07-12'
 categories:
   - litReview
   - phd
-published: true
+published: false
 pinned: false
 coverImage: grontology.webp
 live: https://jstonge.observablehq.cloud/hello-research-groups/grontology

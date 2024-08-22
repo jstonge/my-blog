@@ -163,7 +163,7 @@ We briefly come back to Ilahita's stories to clarify a few points about the scop
 
 Beyond stories and rites of terrors, Henrich argues that Ilahita's scaling up is due to intergroup competition among (39) clans. 
 
-Intergroup competition is hypothesized as a key driver of cultural group selection. For instance, violent conflict such as wars is a great way to preserve strong between-group competition (increasing <em>p<sub>g</sub></em>) while maintaining conformity among your rank (reducing <em>p<sub>ig</sub></em>). Other mechanisms from cultural evolution theory further promote conditions for CGS to work, such as exhibiting preferentially learning from your peers (biased social learning; further reducing <em>p<sub>ig</sub></em>). 
+Intergroup competition is hypothesized as a key driver of cultural group selection. For instance, violent conflict such as wars is a great way to preserve strong between-group competition (increasing <em>p<sub>g</sub></em>) while maintaining conformity among your rank (reducing <em>p<sub>ig</sub></em>). Other mechanisms from cultural evolution theory further promote conditions for CGS to work, such as exhibiting preferentially learning from your peers (biased social learning; further reducing <em>p<sub>ig</sub></em>). We discuss in more depth the mechanism of CGS in another entry.
 
 
 
@@ -222,9 +222,15 @@ Cultural group selection is connected to the following topics in McElreath & Boy
   - Altruistic punishment; second-order dilemma (punishing those who failed to punish; ch. 4.5.2). Second-order dilemma could be a nice use of adaptive higher-order interactions.
   - More generally, n-person games (ch.4.5.1) and repeated interactions (ch. 4.1.1)
 - Costly signal theory; what if people fake their intent (ch.5.1)
+
+Some papers making use of CGS:
 - <a href="https://sci-hub.ru/10.1006/jtbi.2001.2515">Group Beneficial Norms Can Spread Rapidly in a Structured Population (Boyd & Richerson 2002)</a>
+- <a href="https://pubmed.ncbi.nlm.nih.gov/12814597/"> The co-evolution of individual behaviors and social institutions  (Bowles et al. 2003)</a>
 - <a href="https://www.pnas.org/content/pnas/114/23/6068.full.pdf">Collective action and the evolution of social norm internalization (Gavrilets & Richerson 2017)</a>
-- <a href="https://scholar.harvard.edu/files/henrich/files/what_makes_us_smart_final.pdf">What makes us smart? (Henrich & Muthukrishna 2023)</a>
+- <a href="https://royalsocietypublishing.org/doi/10.1098/rstb.2022.0267">Reducing global inequality increases local cooperation: a simple model of group selection with a global externality (Safarzynska & Smaldino 2023)</a>
+
+Reviews of CGS:
+- [Smith et al. 2020](https://www.semanticscholar.org/paper/Cultural-group-selection-and-human-cooperation%3A-a-Smith/b41c5b56da837f5ee94f6a07da63c2f64236b629)
 
 In the next part of the series, we look at how CGS can relate to group-based master equations.
 

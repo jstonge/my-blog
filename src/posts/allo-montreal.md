@@ -23,12 +23,11 @@ Choroplet maps are fun. People love them. The earliest known choroplet was by [C
 
 <img alt="allo-mtl" class="image" src={mtl} />
 
-Are they that useful? It depends on you use them. They represent one variable overlayed on a map. If we understand the variable as a predictor,
-it'll almost always be confounded by other ones. A classic example is that of age-standardized death rates for cancer of kidney/ureter in the US. If you look at both the highest and lowest death rates, you will notice that the maps are extremly similar (see Gelman & Nolan 2009 p.14-15). This is because kidney/ureter cancer deaht rates are confounded by population size of urban centers. 
+Are they useful? It depends on how you use them. They represent one variable overlayed on a map. If we understand that variable as a predictor, it will almost always be confounded by other ones. A classic example is that of age-standardized death rates for cancer of kidney/ureter in the US. If you look at both the highest and lowest death rates, you will notice that the maps are extremly similar (see Gelman & Nolan 2009 p.14-15). This is because kidney/ureter cancer deaht rates are confounded by population size of urban centers. 
 
-Anyway, we love choroplet maps. You still can get insights by looking at them. For instance, I never realized how sparsely populated was Outremont in Montreal (dark red in the middle of the city, Outremont includes Joseph-Beaubien, Robert-Bourassa, Jeanne-Sauvé, and Claude-Ryan electoral counties). I guess it make sense, it is an historically rich district. Same with the city of Westmont. The map is still clunky. The difference between 2011 is not super noticeable (some of the light greens turn darker). I'll fix that in the next iteration.
+Anyway, we love choroplet maps. You still can get insights by looking at them. For instance, I never realized how sparsely populated was Outremont in Montreal (dark red in the middle of the city, Outremont includes Joseph-Beaubien, Robert-Bourassa, Jeanne-Sauvé, and Claude-Ryan electoral counties). I guess it make sense, it is an historically rich district. Same with the city of Westmont. 
 
-Now, I want to talk about why [Observable Framework](https://observablehq.com/framework/) is awesome. If you look at the [source code](https://github.com/jstonge/allo-montreal/tree/main/src), you will notice there is no data. The data is loaded when building the website by the data loaders (`metadata.parquet.py` and `mtl_topo.json.py`). They are python scripts that will generate a parquet file of metadata and a geojson file of montreal. The main issue with dashboard is that they end up rotting. In my experience, one reason why dashboards rot is that we fail to properly document the data pipeline. Following principled data pipeline, here data provenance is documented by the scripts themselves. Here is the metadata loader script:
+Now, I want to talk about why [Observable Framework](https://observablehq.com/framework/) is awesome. One issue with dashboard is that they end up rotting.In my experience, one reason why dashboards rot is that we fail to properly document the data pipeline. Following a [principled data pipeline](https://www.youtube.com/watch?v=ZSunU9GQdcI&t=1103s), here data provenance is documented by the scripts themselves. If you look at the [source code](https://github.com/jstonge/allo-montreal/tree/main/src), you will notice there are no data files. The data is loaded at build-time by the data loaders (`metadata.parquet.py` and `mtl_topo.json.py`). Here is the metadata loader script:
 
 ```
 import sys
@@ -76,7 +75,7 @@ buf_bytes = buf.getvalue().to_pybytes()
 sys.stdout.buffer.write(buf_bytes)
 ```
 
-It is awesome because we (i) keep using a little bit more python for data wrangling, (ii) we document where the data is coming from, and (iii) we output as parquet file. As documented [here](https://observablehq.com/framework/loaders#execution), our python environment is specified by a `requirements.txt` file in our root dir (and create with `venv`), that is run before deployment.
+It is awesome because we (i) keep using a little bit more python for data wrangling, (ii) we document where the data is coming from by having the links in the script, and (iii) we output as parquet file. As documented [here](https://observablehq.com/framework/loaders#execution), our python environment is specified by a `requirements.txt` file in our root dir (and create with `venv`), that is run before deployment.
   
 <style>
 

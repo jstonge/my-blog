@@ -33,6 +33,7 @@
 	},
 	"type": "module",
 	"dependencies": {
+		"@bitmachina/highlighter": "^1.0.0-alpha.6",
 		"@fontsource/jetbrains-mono": "^5.0.20",
 		"@fontsource/manrope": "^5.0.20",
 		"katex": "^0.16.11",

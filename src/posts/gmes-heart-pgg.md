@@ -7,7 +7,7 @@ categories:
   - phd
   - GMEs
 published: true
-pinned: true
+pinned: false
 coverImage: tragedy.webp
 ---
 

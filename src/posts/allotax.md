@@ -37,5 +37,4 @@ Allotaxonometry of popular US boy baby names in 1895 and 1930. When examining th
     box-shadow: 0 0 0 0.75px rgba(128, 128, 128, 0.2), 0 6px 12px 6px rgba(0, 0, 0, 0.4);
     border-radius: 8px;
   }
-  
 </style>

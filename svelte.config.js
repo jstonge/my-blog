@@ -18,12 +18,11 @@ const mdsvexOptions = {
 		_: './src/mdsvex.svelte'
 	},
 	highlight: {
-		highlighter: await createHighlighter({ theme: "nord" }),
-		// highlighter: async (code, lang = 'text') => {
-		// 	const highlighter = await getHighlighter({ theme: 'poimandres' })
-		// 	const html = escapeSvelte(highlighter.codeToHtml(code, { lang }))
-		// 	return `{@html \`${html}\` }`
-		// }
+		highlighter: async (code, lang = 'text') => {
+			const highlighter = await getHighlighter({ theme: 'poimandres' })
+			const html = escapeSvelte(highlighter.codeToHtml(code, { lang }))
+			return `{@html \`${html}\` }`
+		}
 	},
 	remarkPlugins: [smartypants, remarkUnwrapImages, [remarkToc, { tight: true }]],
 	rehypePlugins: [rehypeSlug]

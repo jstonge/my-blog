@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "comp-embeddings.md",
+                "file": "cgs-comp.md",
                 "mode": "source",
                 "source": false
               }
@@ -69,7 +69,8 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300
+    "width": 300,
+    "collapsed": true
   },
   "right": {
     "id": "aee53e6202be4eb5",
@@ -85,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "comp-embeddings.md",
+                "file": "cgs-comp.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -102,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "comp-embeddings.md",
+                "file": "cgs-comp.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "comp-embeddings.md"
+                "file": "cgs-comp.md"
               }
             }
           }
@@ -148,8 +149,12 @@
   },
   "active": "9a6e07da114997b4",
   "lastOpenFiles": [
-    "on-note-taking.md",
+    "we-networks.md",
+    "why-groups.md",
+    "cgs-comp.md",
+    "grontology.md",
     "comp-embeddings.md",
+    "on-note-taking.md",
     "rise-internet.md",
     "scisci-meets-ce.md",
     "baby-log.md",

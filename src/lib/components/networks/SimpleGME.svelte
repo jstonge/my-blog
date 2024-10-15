@@ -1,27 +1,35 @@
 <script>
 	
 	export let width = 200;
-	export let height = 300;
+	export let height = 550;
 	// Define the input data
 	export let circlesData = {
     Circle1: [
-      { cx: 130, cy: 150, r: 10, fill: "white" },
-      { cx: 150, cy: 130, r: 10, fill: "white" }
+      { cx: 125, cy: 140, r: 10, fill: "white" },
+      { cx: 150, cy: 125, r: 10, fill: "white" },
+      { cx: 150, cy: 155, r: 10, fill: "white" }
     ],
     Circle2: [
-      { cx: 130, cy: 150, r: 10, fill: "black" },
-      { cx: 150, cy: 130, r: 10, fill: "white" }
+      { cx: 125, cy: 140, r: 10, fill: "white" },
+      { cx: 150, cy: 125, r: 10, fill: "white" },
+      { cx: 150, cy: 155, r: 10, fill: "black" }
     ],
     Circle3: [
-      { cx: 130, cy: 150, r: 10, fill: "black" },
-      { cx: 150, cy: 130, r: 10, fill: "black" }
+      { cx: 125, cy: 140, r: 10, fill: "white" },
+      { cx: 150, cy: 125, r: 10, fill: "black" },
+      { cx: 150, cy: 155, r: 10, fill: "black" }
+    ],
+    Circle4: [
+      { cx: 125, cy: 140, r: 10, fill: "black" },
+      { cx: 150, cy: 125, r: 10, fill: "black" },
+      { cx: 150, cy: 155, r: 10, fill: "black" }
     ]
   };
 
   // Utility function to get larger circle coordinates
   const getLargeCircleCoordinates = (index) => ({
     cx: 100,
-    cy: 100 + index * 200,
+    cy: 100 + index * 150,
     r: 40
   });
 

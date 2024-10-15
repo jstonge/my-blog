@@ -236,14 +236,22 @@ li {
 }
 
 .tip {
-    border-left: solid 1px;
+    border-left: solid 3px;
     border-radius: 0 4px 4px 0;
     padding: 1rem 2rem;
     margin: 1rem 0;
     box-sizing: border-box;
     max-width: 640px;
     border-left-color: var(--theme-green); /* Green border */
-    background-color: color-mix(in srgb,var(--theme-green), 90%);;
+    background-color: color-mix(in srgb,var(--theme-green), 90%);
+  }
+
+.takeHome {
+	font-size: 1.2rem;
+    border-left: solid 5px;
+    padding: 1rem 2rem;
+	border-left-color: #b58fbc; /* Green border */
+    margin: 1rem 0;
   }
 
 .caution {

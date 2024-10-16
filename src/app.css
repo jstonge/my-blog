@@ -235,6 +235,15 @@ li {
 	padding: 0;
 }
 
+.math-box {
+	padding: 15px;
+	background-color: rgba(119, 156, 174, 0.355);
+	border-radius: 8px;
+	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+	margin-top: 2rem;
+	max-width: 700px;
+  }
+  
 .tip {
     border-left: solid 3px;
     border-radius: 0 4px 4px 0;
@@ -247,11 +256,11 @@ li {
   }
 
 .takeHome {
-	font-size: 1.2rem;
+	font-size: 1.1rem;
     border-left: solid 5px;
-    padding: 1rem 2rem;
+    padding: 0.2rem 2rem;
 	border-left-color: #b58fbc; /* Green border */
-    margin: 1rem 0;
+	margin-top: 2rem;
   }
 
 .caution {

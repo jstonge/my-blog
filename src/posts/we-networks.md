@@ -54,7 +54,7 @@ Chimps might help each other form alliances to better navigate the social hierar
   where <strong>s<sub>i</sub></strong> is the real-valued position, or rank, of node <em>i</em> and <Katex math={"H(s) = \\sum_{i,j=1}^{N}A_{ij}H_{ij} = \\frac{1}{2} \\sum_{i,j} A_{ij}(s_i-s_j-1)^2"}/> is the Hamiltonian of the system for which the total energy is minimized. As a physical simulation, the energy must be conserved. The optimal ranking <Katex math={"s^*"}/> is found when directed edges <Katex math={"i\\rightarrow j"}/> ceased to be bothered. That is, the energy of the spring <Katex math={"H_{ij}"}/> is minimized when <Katex math={"s_i-s_j=1"}/>. In physical terms, the ranks are thus determined by finding the ground state of the system, which is shown in the paper to correspond in to a penalized maximum (log) likehood estimate of ranks (above expression). Note that the <Katex math={"\\beta"}/> parameter is an inverse temperature controlling the amount of noise in the model. 
   <br><br>
     <center>
-      <img src="https://phys.libretexts.org/@api/deki/files/15768/clipboard_ec136cd98a125d193357cf73639b826af.png?revision=1)" alt="spring system">
+      <img src="https://phys.libretexts.org/@api/deki/files/15768/clipboard_ec136cd98a125d193357cf73639b826af.png?revision=1)" alt="spring system" width="300">
       </center>
   <br>
 </div>
@@ -114,16 +114,33 @@ For instance, we can design our model so that individuals might agree with the l
     margin-left: 20px; 
     margin-right: -300px;
     position: relative;
-}
+  }
+
+  table {
+    border: 2px solid rgb(140 140 140);
+    width: 90%;
+    float: none;
+    margin: 0 auto; 
+  }
+
+  th,
+  td {
+    border: 1px solid rgb(160 160 160);
+  }
 
 @media (max-width: 1100px) {
   .margin {
     float: none;
     margin: 0 auto; 
-    width: 70%;
+    width: 90%;
     padding-top: 2.5rem;  
     padding-bottom: 1rem;  
   }
+  
+  .math-box {
+    font-size: 0.9rem;  
+  }
+
 }
 
 </style>

@@ -6,6 +6,7 @@ categories:
   - phd
   - culturalGroupSelection
   - GMEs
+  - collIntentionality
 published: false
 pinned: false
 coverImage: cgs-ver-abstract.webp

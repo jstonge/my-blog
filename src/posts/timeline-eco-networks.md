@@ -1,34 +1,14 @@
 ---
 title: Timeline ecological networks
 description: A short history of ecological networks
-date: '2024-02-24'
+date: 2024-02-24
 categories:
   - netsci2024
-published: true
+published: false
 pinned: false
 coverImage: https://raw.githubusercontent.com/jstonge/hello-research-groups/main/docs/assets/HenslinCh5.webp
+live: https://jstonge.github.io/ecology-networks-timeline/
+source: https://raw.githubusercontent.com/jstonge/ecology-networks-timeline/main/docs/index.md
 ---
 
-This is a small [observable framework entry](https://jstonge.observablehq.cloud/hello-research-groups/results/timeline) for visualizing the history of ecological networks, as told by Dominique Gravel at NetSci 2024. 
-
-<br>
-<iframe
-  id="inlineFrameExample"
-  width="100%"
-  height="600"
-  class="crop"
-  title="netsci2024 ecology"
-  src="https://jstonge.github.io/ecology-networks-timeline/">
-</iframe>
-
-p.s. The source code can be found [here](https://raw.githubusercontent.com/jstonge/ecology-networks-timeline/main/docs/index.md).
-
-<style type="text/css">
-
-.crop {
-  border-radius: 8px;
-  margin: 1rem;
-  max-width: calc(100%);
-  box-shadow: 0 0 0 0.75px rgba(128, 128, 128, 0.2), 0 6px 12px 6px rgba(0, 0, 0, 0.4);
-}
-</style>
+At [NetSci 2024](https://netsci2024.com/fr), I went at a workshop on Ecological networks given by Dominique Gravel. We got to know the origin story of networks from the ecological perspective. It was informative because, as always, some ideas are pretty old! 

@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "cgs-comp.md",
+                "file": "uvm-course-offering.md",
                 "mode": "source",
                 "source": false
               }
@@ -86,7 +86,7 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "cgs-comp.md",
+                "file": "uvm-course-offering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +103,7 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "cgs-comp.md",
+                "file": "uvm-course-offering.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -126,7 +126,7 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "cgs-comp.md"
+                "file": "uvm-course-offering.md"
               }
             }
           }
@@ -149,17 +149,41 @@
   },
   "active": "9a6e07da114997b4",
   "lastOpenFiles": [
+    "course-enrollment-sh/llama.png",
+    "course-enrollment-sh/index_files/figure-html/unnamed-chunk-9-1.png",
+    "course-enrollment-sh/index_files/figure-html/unnamed-chunk-8-1.png",
+    "course-enrollment-sh/index_files/figure-html/unnamed-chunk-7-1.png",
+    "course-enrollment-sh/index_files/figure-html/unnamed-chunk-6-1.png",
+    "course-enrollment-sh/index_files/figure-html/unnamed-chunk-5-1.png",
+    "course-enrollment-sh/index_files/figure-html/unnamed-chunk-13-1.png",
+    "course-enrollment-sh/index_files/figure-html/unnamed-chunk-12-1.png",
+    "course-enrollment-sh/index_files/figure-html/unnamed-chunk-11-1.png",
+    "course-enrollment-sh/index_files/figure-html/unnamed-chunk-10-1.png",
+    "course-enrollment-sh/index_files/figure-html",
+    "course-enrollment-sh/index_files",
+    "course-enrollment-sh/cc-1985.parquet",
+    "course-enrollment-sh/course_catalogue_tidy.parquet",
+    "course-enrollment-sh/index.qmd",
+    "course-enrollment-sh",
+    "llama.png",
+    "cc-1985.parquet",
+    "index_files/figure-html",
+    "index_files",
+    "index.qmd",
+    "allo-montreal.md",
+    "uvm-course-offering.md",
+    "timeline-eco-networks.md",
+    "allotax.md",
+    "gmes-heart-pgg.md",
+    "cgs-comp.md",
     "we-networks.md",
     "why-groups.md",
-    "cgs-comp.md",
     "grontology.md",
     "comp-embeddings.md",
     "on-note-taking.md",
     "rise-internet.md",
     "scisci-meets-ce.md",
     "baby-log.md",
-    "allotax.md",
-    "gmes-heart-pgg.md",
     "course-catalogs.md",
     "quote-chain.md",
     "handbook-cultural-evo.md",

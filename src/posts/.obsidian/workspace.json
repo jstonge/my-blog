@@ -4,19 +4,15 @@
     "type": "split",
     "children": [
       {
-        "id": "afc9c69d1da492d9",
+        "id": "ba8d6702acc4f7e9",
         "type": "tabs",
         "children": [
           {
-            "id": "9a6e07da114997b4",
+            "id": "54e8d04a990bfacd",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "uvm-course-offering.md",
-                "mode": "source",
-                "source": false
-              }
+              "type": "empty",
+              "state": {}
             }
           }
         ]
@@ -38,7 +34,7 @@
             "state": {
               "type": "file-explorer",
               "state": {
-                "sortOrder": "alphabetical"
+                "sortOrder": "byModifiedTime"
               }
             }
           },
@@ -69,8 +65,7 @@
       }
     ],
     "direction": "horizontal",
-    "width": 300,
-    "collapsed": true
+    "width": 300
   },
   "right": {
     "id": "aee53e6202be4eb5",
@@ -86,7 +81,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "uvm-course-offering.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -103,7 +97,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "uvm-course-offering.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               }
@@ -125,9 +118,7 @@
             "type": "leaf",
             "state": {
               "type": "outline",
-              "state": {
-                "file": "uvm-course-offering.md"
-              }
+              "state": {}
             }
           }
         ]
@@ -147,8 +138,22 @@
       "command-palette:Open command palette": false
     }
   },
-  "active": "9a6e07da114997b4",
+  "active": "54e8d04a990bfacd",
   "lastOpenFiles": [
+    "simple-to-ames.md",
+    "grontology.md",
+    "comp-works.md",
+    "coevo-paradox.md",
+    "fos-evolving.md",
+    "rise-internet.md",
+    "comp-embeddings.md",
+    "research-groups.md",
+    "why-groups.md",
+    "cgs.md",
+    "gmes-heart-pgg.md",
+    "timeline-eco-networks.md",
+    "cgs-comp.md",
+    "uvm-course-offering.md",
     "course-enrollment-sh/llama.png",
     "course-enrollment-sh/index_files/figure-html/unnamed-chunk-9-1.png",
     "course-enrollment-sh/index_files/figure-html/unnamed-chunk-8-1.png",
@@ -165,28 +170,18 @@
     "course-enrollment-sh/course_catalogue_tidy.parquet",
     "course-enrollment-sh/index.qmd",
     "course-enrollment-sh",
-    "llama.png",
     "cc-1985.parquet",
     "index_files/figure-html",
     "index_files",
     "index.qmd",
     "allo-montreal.md",
-    "uvm-course-offering.md",
-    "timeline-eco-networks.md",
     "allotax.md",
-    "gmes-heart-pgg.md",
-    "cgs-comp.md",
     "we-networks.md",
-    "why-groups.md",
-    "grontology.md",
-    "comp-embeddings.md",
     "on-note-taking.md",
-    "rise-internet.md",
     "scisci-meets-ce.md",
     "baby-log.md",
     "course-catalogs.md",
     "quote-chain.md",
-    "handbook-cultural-evo.md",
-    "comp-works.md"
+    "handbook-cultural-evo.md"
   ]
 }

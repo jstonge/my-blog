@@ -197,8 +197,9 @@ li {
 }
 
 .prose :is(ul, ol) {
-	list-style-type: '-';
-	padding-left: var(--size-5);
+	margin-top: var(--size-7);
+	list-style-type: '•';
+	padding-left: var(--size-7);
 }
 
 .prose :is(ul, ol) li {
@@ -301,3 +302,53 @@ mark::before, mark::after, del::before, del::after, ins::before, ins::after, s::
 	height: 100%
 }
 
+/* Container for the navigation buttons */
+.page-navigation {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	max-width: 600px;
+	margin: 5rem auto;
+  }
+  
+  /* Styling for each button */
+  .page-button {
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+	padding: 10px;
+	border: 1px solid #ddd;
+	border-radius: 8px;
+	width: 45%;
+	box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Specific alignment for Next button */
+  .page-button.next {
+	align-items: flex-end;
+  }
+  
+  /* Label styling */
+  .label {
+	font-size: 12px;
+	color: #888;
+	margin-bottom: 5px;
+  }
+  
+  /* Link styling */
+  .link {
+	font-size: 16px;
+	color: #565bbf;
+	text-decoration: none;
+  }
+  
+  /* Hover effect on links */
+  .link:hover {
+	text-decoration: underline;
+  }
+  
+  /* Optional: Add a subtle hover effect on the button container */
+  .page-button:hover {
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15);
+  }
+  

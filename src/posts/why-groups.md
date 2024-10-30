@@ -27,7 +27,16 @@ And policies, or norms, one might say, are group-level behaviors. For now, I wil
 
 Why then, we know that norms and policies are key driver of a contagion, do we feel that simpler contagion models ought to start from nodes rather than groups? As I show in my thesis, modeling well-known phenomena such as contagion from a group-level perspective, rather than a node-first perspective, drastically change how we think about the underlying causes of those phenomena. This group-level perspective might have been impeded by our collective love of networks. An alternative hypothesis is that that most complex scientsts are also [WEIRD](https://en.wikipedia.org/wiki/Psychology#WEIRD_bias), but this is for another time.
 
-For the time being, let me introduce the notion of groups as modeling units from three distinct perspectives; philosophy, physics, and cultural evolution. I argue 
+For the time being, let me introduce the notion of groups as modeling units from three distinct perspectives; philosophy, physics, and cultural evolution. 
+
+<div class="page-navigation">
+  <div class="page-button previous" style="opacity: 0;">
+  </div>
+  <div class="page-button next">
+    <span class="label">Next page</span>
+    <a href="./models-of-groups" class="link">Defining group interactions</a>
+  </div>
+</div>
 
 
 <!-- I explore how the controversy might be exacerbated by the fact that science is rooted in a WEIRD ontology.  -->

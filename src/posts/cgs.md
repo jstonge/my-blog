@@ -3,7 +3,7 @@ title: Cultural group selection for group-enthusiast physicists
 description: Why bother with cultural group selection?
 date: '2024-07-05'
 categories:
-  - culturalGroupSelection
+  - CGS
   - gameTheory
   - phd
 published: true

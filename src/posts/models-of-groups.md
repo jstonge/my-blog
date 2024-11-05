@@ -15,6 +15,7 @@ coverImage: uvm_offering.webp
 <script>
 	import ArudaFig2 from '$lib/assets/ArudaFig2.webp';
 	import StOngeMesoFig2 from '$lib/assets/StOngeMesoFig2.webp';
+	import jso2023Fig1 from '$lib/assets/jso2023Fig1.webp';
 </script>
 
 
@@ -41,46 +42,50 @@ We propose a typology to clarify the varied uses of group interactions.
  - `Alignment`: is the group mind aligned with that of individuals?
  - `Differentiation`: is the group organized in ways that matter for coordination?
 
-We seek to interpret each category in terms of specific network assumptions and related literature. 
+We aim to interpret each category through specific network assumptions and relevant literature. For example, the HONs community tend to focus on groups that are `irreducible`, `permanent`, and `isolated`. This is typically modeled by assuming quenched structures, or a frozen topology. In quenched networks, groups persist over timescales and resist reshuffling. In other words, repeatedly interacting with the same individuals—such as those in a household or workplace—can lead to qualitatively different contagion outcomes than those predicted by averaging over an entire population (i.e., the law of mass action). With isolated groups, we assume that the contagion is largely confined to within-group interactions.
 
-For instance, the HONs community mostly focused on `irreducible`, `permanent`, and `isolated` groups. It assumes that higher-order networks are irreducible to their dynamics, in the sense that you need information about hyperedges to determine the outcome of a spread within a group. In HONs, we also typically assume _quenched_ structures, or a frozen topology. That is, the people with whom you repeatedly interact, say in a household or workplace, matters to have an accurate picture of the contagion. And finally, what matters to describe the contagion is restricted to within-group interactions. 
-
-What other group interactions fall outside the scope of this specific set of group-level features? 
-
-## Diversity in group interactions 
-
-We can trivially define a group as a highly clustered networks, or cliques, as it is typically done in pairwise networks. Then, assume that those groups interact somehow; you have set of highly clustered individuals citing each other in a given scientific discipline. Cliques are higher-order structures, regardless of the dynamics. They might not have nonlinear effects within groups, but they are nonetheless "group interactions". 
-
-In this view, higher-order networks rely on an _annealed_ representation, with groups being continuously reshuffled. This approach is favored in part for mathematical convenience, as it facilitates the generalization of analyses from pairwise networks to sets with unrestricted cardinality. 
-
-We propose that group interactions can take other forms. We define a crowd as irreducible and ephemeral group interactions, whereas the aggregate mind is `unaligned` with that of individuals. The crowd can be influenced by a committed minority that have their own agenda. The activation spread is also nonlinear, as a tipping point can be reached when, say, a riot is forming. But it is distinguishable to a group seeking to reach a consensus on a lunch spot. In the riot case, individual members can feel dispossessed of their agency, upon reflection of the riot, while in the lunch members have reached a consensus aligned with their needs.
-
-The persistence of groups allows for more ontologically rich, but philosophically taxing notions of group interactions. We start with the most commonly accepted notions of social ontology; groups with strong social boundaries are shaped by their relationships with neihboring groups. With a quenched structure, we can explore how group interactions coevolved with that of individual states and other groups. 
-
-For instance, consider masking behaviors during a pandemy, with groups being public health department at county-level. Once again we assume that these groups are `persistent`, `irreducible`, but now assume that group themsleves are `interacting` with each other. That is, to know the state of individual of group members you also need to know what is happenning in other groups. Hence, we can frame the contagion as group-level dynamics, beyond the nonlinear effects within groups (shameless plug for [our paper](https://arxiv.org/abs/2310.03672), or this [one](https://corpus.ulaval.ca/server/api/core/bitstreams/98857642-c3b6-4e73-aed6-cc04a33c1eea/content) by another St-Onge). 
-
+What if group interactions are characterized by `persistent`, `irreducible`,  `interacting` groups. That is, to know the state of individual of group members you also need to know what is happenning in other groups. In [this paper](https://corpus.ulaval.ca/server/api/core/bitstreams/98857642-c3b6-4e73-aed6-cc04a33c1eea/content), the authors show tha group-based approximate master equations with interacting groups can lead to mesoscopic localization
 
 <img alt="StOngeMesoFig2" src={StOngeMesoFig2} class="image"/>
 
-To convince yourself, consider how groups are taking action to prevent spread within their members, while being coupled with other groups who seek to do the same. Formally, we track the network state through the states of cliques of arbitrary size, while assuming a mean-field approximation for the influence of other groups on the state of group members. Depending on how, say, the degree to which groups are enforcing masking behaviors, it has a joint influence on within group members, but also global prevalence.
+With large enough groups, a disease can become self-sustaning, thereby "smearing" the phase transition. In plain english, even though your group might be doing great, there is a chance that the disease found fertile ground in some other groups, thereby increasing overall transmission probability. Here, the a structure is quenched, but coupling between groups is approximated by mean-field theory. That is, groups interactions are reshuffled, but groups persist over timescales.
 
+## A diversity of group interactions 
+
+We can trivially define groups in highly clustered networks as cliques, as is typically done in pairwise networks. Then, assume that these groups interact in some way; for example, a set of closely connected individuals citing each other within a given scientific discipline, or groups of chimpanzees spread across Africa, with females migrating between groups. Cliques represent higher-order structures regardless of the dynamics. They may lack nonlinear effects within groups, but they still qualify as 'group interactions.'
+
+In this view, higher-order networks relying on annealed representations, where clusters of individuals are continuously reshuffled, may be appropriate. This approach is favored partly for mathematical convenience, but in some cases, it can be accurate. Contagions spreading within isolated, ephemeral groups (as they are reshuffled) may provide a better approximation of the dynamics than assuming no group structure at all. Moreover, it greatly facilitates the generalization of analytical results from pairwise networks to those with unrestricted cardinality.
+
+We can define a crowd as an irreducible and ephemeral group interaction, characterized by an aggregate mindset that is unaligned with that of its individual members. The crowd may be influenced by a committed minority with its own agenda, and the spread of activation can be nonlinear—reaching a tipping point, for instance, when a riot begins to form. This differs from a group seeking to reach a consensus on a lunch spot. In the case of a riot, individuals may later feel they lost a sense of agency, whereas in the lunch scenario, members achieve a consensus that aligns with their individual preferences.
+
+The persistence of groups allows for more ontologically rich, albeit philosophically taxing notions of group interactions. However, we first need to address the missing link in human social interactions.
+
+We start with the most commonly accepted notions of social ontology; groups with strong social boundaries are shaped by their relationships with neihboring groups. With a quenched structure, we can explore how group interactions coevolved with that of individual states and other groups. 
 
 ## Is intention all that matters?
 
-We propose a group-centered typology that is informed by various network assumptions, such as quenched or annealed representations. We purport that keeping in mind `persistence`, `reducibility`, `isolation`, `alignment` and `differentiation`, we can better describe the ontology of group interactions. But we think that something is still missing from that description of group interactions. What could it be?
+So far we have proposed a group-centered typology that is informed by various network assumptions, such as quenched or annealed representations. We believe that keeping in mind `persistence`, `reducibility`, `isolation`, `alignment` and `differentiation`, we can better describe group interactions. But we think that something is still missing from that description of group interactions. What could it be?
 
 When talking about group minds, or misalignement between individual and groups, we left out a key component of social ontology; that of **(collective) intentionality**. Collective intentionality is the informational layer that bind human networks their own unique ways. It is based on institutional facts and norms of rational inference and truth, that are grounded in the collective practices and blieffs of a social group conceived _generally_ ([Engelmann & Tomasello 2023](https://www.taylorfrancis.com/chapters/edit/10.4324/9781315768571-41/middle-step-joint-intentionality-human-unique-form-second-personal-engagement-jan-engelmann-michael-tomasello)). 
 
-In philosophy, this is sometimes called 'we-intentionality', which is distinct from shared intentionality that occurs in collaborative practices. In this literature, the irreducibility of groups to individuals is an ontological statement. In its strongest form, the argument posits that groups exist independently of individuals; for instance, corporations can lie and be held accountable, above and beyond the actions of corrupt CEOs. When left-handed individuals come together at universities to advocate for adapted furniture, they cross the ontological boundary between aggregates and intentional groups.
+In philosophy, this concept is sometimes called 'we-intentionality,' distinct from the shared intentionality that emerges in collaborative practices. In this literature, the irreducibility of groups to individuals is an ontological claim. In its strongest form, this view posits that groups exist independently of individuals; for instance, corporations can lie and be held accountable beyond the actions of corrupt CEOs. When left-handed individuals unite at universities to advocate for adapted furniture, they cross the ontological boundary between mere aggregates and intentional groups.
 
-As far as I know, very little work has been done on connecting human species-specific modes of cooperation with group-based network structures. Each of the aforementioned categories is influenced by modes of cooperation embedded in our shared perceptions of ourselves and others. 
+As far as I know, very little work has been done to connect human species-specific modes of cooperation with group-based network structures. Each of the aforementioned categories is shaped by modes of cooperation embedded in our shared perceptions of ourselves and others.
 
-A few examples come to my mind when thinking about the connection between intentionality and group-based network structures. I dive deeper in those topics in other entries, but consider how kin-based institutions rely on social markers that sharply distinguish in-groups from others and promote deference to elders (CITE HENRICH). These features reduce cultural variability within groups while maintaining intergroup variability. Consequently, one might expect persistent and cohesive groups to emerge, perhaps making quenched structures a better representation of kin-based institutions.
+Consider masking behaviors during a pandemic. When visiting a French café, if open, you are expected to wear a mask to place an order. Collective intentionality underlies this behavior: it is understood that the customer is there to consume a product offered by the employer of the waiter. This scenario is further overlaid by local public health departments enforcing specific policies to reduce infections in the area. The institional reality doesn’t depend on these specific occurrences but rather supra-individual constructions like norms and cultural conventions. As such, groups like French café or public health departments are persistent, irreducible, interacting, and exhibit collective intentionality in enforcing policies among local population (be it sets of customers or local population). From this perspective, contagion is influenced by a group-level dynamic, beyond momentary interactions (shameless plug for [our paper](https://arxiv.org/abs/2310.03672)).
+
+<img alt="jso2023Fig1" src={jso2023Fig1} class="image"/>
+
+Formally, in the above example we track the network state through the states of cliques of arbitrary sizes, while assuming a mean-field approximation for the influence of other groups on the state of group members. Put in other words, the policies of varying strictness are arguably better represented by intentional groups with some frozen structures, with groups interacting with one another in a random-matching fashion. When a collective 'We' chooses to wear a mask, it reflects the coevolution of policies and behaviors. 
+
+Yet, this example remains a poor approximation of collective intentionality. The 'We-' intentionality is absent from this model. A potential approach could be to model the influence of social identity on adherence to policies. Social identity arises from the cultural niches of individuals and is embedded in the symbolic markers and narratives we use to recognize other group members. One might consider the joint influence of this additional informational layer—the strength of social identity—on individual members' willingness to incur personal costs for the benefit of the group.
+
+<!-- A few examples come to my mind when thinking about the connection between intentionality and group-based network structures. I dive deeper in those topics in other entries, but consider how kin-based institutions rely on social markers that sharply distinguish in-groups from others and promote deference to elders (CITE HENRICH). These features reduce cultural variability within groups while maintaining intergroup variability. Consequently, one might expect persistent and cohesive groups to emerge, perhaps making quenched structures a better representation of kin-based institutions.
+ -->
 
 All that to say that group interactions is more than nonlinear effects in the dynamics. We believe that our typology can help better navigate the modeling of groups. A kind of irreducibility can stem from the interaction of structure and dynamics on higer-order networks. 
 
-The much harder question is also how to represent intentionality in those dynamics; perhaps the probability of me getting the new iphone is partly determined by multiple exposures to friends, but also a sense of belonging in that group. 
-
+<!-- The much harder question is also how to represent intentionality in those dynamics; perhaps the probability of me getting the new iphone is partly determined by multiple exposures to friends, but also a sense of belonging in that group.  -->
 
 <!-- ### A tale of two species of chimps
 

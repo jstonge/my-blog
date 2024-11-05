@@ -3,7 +3,7 @@ title: The role of competition in group selection
 description: Is everything about groups competition?
 date: '2024-08-05'
 categories:
-  - culturalGroupSelection
+  - CGS
   - gameTheory
   - phd
 published: false

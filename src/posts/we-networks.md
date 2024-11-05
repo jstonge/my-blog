@@ -4,7 +4,7 @@ description: Modeling interactions with the group
 date: 2024-10-14
 categories:
   - phd
-  - culturalGroupSelection
+  - CGS
   - GMEs
   - collIntentionality
 published: false
@@ -35,7 +35,7 @@ In the first column, Tomasello summarizes pairwise interactions that are key to 
 
 <div class="takeHome">GMEs are better suited than simple networks for representing humans' in-group species-typical motivations. At the risk of stating the obvious, group-based models are better at capturing irreducible group-based social dynamics, which lie at the heart of humans' ability to ratchet cultural knowledge. Recognizing that cultural behaviors are shaped by a collective 'WE' allows us to better reintegrate individual variations in agency, beliefs, and rationality.</div>
 
-Tomasello did amazing work on how humans differ from other great apes in their modes of cooperation. From a network perspective, intentionality types ought to drive edge formation; you helping me in a dominance contest with or without shared intententionality lead to different order of interactions. By linking Tomasello's work to GMEs, we highlight the primacy of group-based models for studying humans.
+Tomasello did amazing work on how humans differ from other great apes in their modes of cooperation. From a network perspective, intentionality types ought to drive edge formation; you helping me in a dominance contest with or without shared intententionality lead to different order of interactions. By linking `Tomasello's work to GMEs, we highlight the primacy of group-based models for studying humans.
 
 #### Others and me
 

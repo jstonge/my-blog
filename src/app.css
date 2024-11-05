@@ -275,6 +275,51 @@ li {
     background-color: color-mix(in srgb,var(--color-band-4), 90%);;
   }
 
+.cite {
+    border-left: solid 3px;
+    border-radius: 0 4px 4px 0;
+    padding: 1rem 2rem;
+    margin: 1rem 0;
+    box-sizing: border-box;
+    max-width: 640px;
+    border-left-color: var(--theme-black); /* Green border */
+    background-color: color-mix(in srgb, var(--theme-black), 90%);
+    position: relative;
+}
+
+.cite .quote {
+    font-size: 1rem; /* Adjust as needed */
+    font-style: italic;
+    color: var(--theme-black);
+    font-weight: bold;
+}
+
+.cite .quote::before {
+    content: "“";
+    font-size: 1.5rem;
+    line-height: 0;
+    vertical-align: top;
+    color: var(--theme-black);
+    margin-right: 0.2rem;
+}
+
+.cite .quote::after {
+    content: "”";
+    font-size: 1.5rem;
+    line-height: 0;
+    vertical-align: bottom;
+    color: var(--theme-black);
+    margin-left: 0.2rem;
+}
+
+.cite .citation {
+    display: block;
+    font-size: 1rem;
+    color: var(--theme-black);
+    text-align: right;
+}
+
+
 mark::before, mark::after, del::before, del::after, ins::before, ins::after, s::before, s::after {
 	clip: rect(0 0 0 0);
 	clip-path: inset(100%);

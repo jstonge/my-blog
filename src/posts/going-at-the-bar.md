@@ -206,3 +206,21 @@ body {
   }
 
 </style>
+
+<!-- 
+La persistence de CI. 
+emeutes, nazis, eglises... 
+
+INTERFACE
+
+Systemes complexes buzz higher-order
+
+buzz est de parler des "groupes"
+
+Mais pas vraiment définit
+
+Dimensions effectives: qu'est-ce qui est inclut dans les groupes. Le group est l'unité. Mais la dynamique est restrictive; emergence, isolation, persistence, différentiation, alignement.
+
+faire des maths... mathématiquement...  
+
+-->

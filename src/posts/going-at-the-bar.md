@@ -1,5 +1,5 @@
 ---
-title: Going at the Bar (draft)
+title: Going at the Bar
 description: A cultural evolutionist (CE), a physicist, and a philosopher walk into a French café.
 date: 2024-11-01
 categories:
@@ -8,7 +8,7 @@ categories:
   - CGS
   - GMEs
 published: true
-pinned: false
+pinned: true
 coverImage: uvm_offering.webp
 ---
 
@@ -206,3 +206,21 @@ body {
   }
 
 </style>
+
+<!-- 
+La persistence de CI. 
+emeutes, nazis, eglises... 
+
+INTERFACE
+
+Systemes complexes buzz higher-order
+
+buzz est de parler des "groupes"
+
+Mais pas vraiment définit
+
+Dimensions effectives: qu'est-ce qui est inclut dans les groupes. Le group est l'unité. Mais la dynamique est restrictive; emergence, isolation, persistence, différentiation, alignement.
+
+faire des maths... mathématiquement...  
+
+-->

@@ -4,12 +4,11 @@
     
     <img src="profile.jpg" alt="profile" class="profile-pic"/>
     
-    <p>I'm currently a second-year PhD student at the <a href="https://vermontcomplexsystems.org/">Vermont Complex System Center</a>, actively involved 
-        with the <a href="https://www.compethicslab.org/">Computational Ethics Lab</a> and the <a href="https://verso.w3.uvm.edu/">VERSO</a> project, the open source program office at UVM.     
+    <p>I'm a research software engineer at the <a href="https://vermontcomplexsystems.org/">Vermont Complex System Institute</a>, where i have done my thesis on the co-evolution of individuals and institutions.
         My thesis project focuses on understanding the impact of learning to code in science and how it 
         influences the research group life cycles in the midst of the computational revolution. 
         Using group-based models, I investigate the potential tension between group and individual benefits, 
-        given individual relative interests or costs to learn to code. </p>
+        given individual relative interests or costs to learn to code. I am part of the <a href="https://verso.w3.uvm.edu/">VERSO</a> project, the open source program office at UVM. </p>
     
     <br>
     
